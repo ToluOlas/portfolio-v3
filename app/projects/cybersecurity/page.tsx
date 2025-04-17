@@ -50,7 +50,7 @@ export default function CybersecurityProject() {
             
             <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900">
               <h2 className="text-xl font-semibold mb-4">Project Status</h2>
-              <p className="text-muted-foreground">Completed (First Class Grade)</p>
+              <p className="text-muted-foreground">Completed</p>
             </div>
           </div>
           
@@ -63,11 +63,11 @@ export default function CybersecurityProject() {
             <h3 className="text-xl font-semibold mb-4">Key Features</h3>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
               <li>Interactive scenario-based learning</li>
+              <li>AI controlled characters for dynamic gameplay</li>
               <li>Progress tracking and assessment system</li>
-              <li>Real-world cybersecurity concepts</li>
+              <li>Gamification of real-world cybersecurity concepts</li>
               <li>Engaging storyline and character progression</li>
               <li>Immediate feedback and learning reinforcement</li>
-              <li>Performance analytics and reporting</li>
             </ul>
             
             <h3 className="text-xl font-semibold mb-4">Research Findings</h3>
@@ -75,10 +75,10 @@ export default function CybersecurityProject() {
               The project demonstrated significant improvements in participants' cybersecurity awareness:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li>85% increase in threat recognition</li>
-              <li>76% improvement in security best practices</li>
-              <li>92% user engagement rate</li>
-              <li>Long-term retention of security concepts</li>
+              <li>34% increase in overall knowledge</li>
+              <li>76% improvement in threat recognition</li>
+              <li>8/10 overall user engagement rating</li>
+              <li>83% of players expressed potential monetary commitment to further development of game</li>
             </ul>
           </div>
           
@@ -88,21 +88,25 @@ export default function CybersecurityProject() {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Research Phase</h3>
                 <p className="text-muted-foreground">
-                  Conducted extensive research on cybersecurity education methods and gamification principles. Analyzed existing training programs and identified key areas for improvement.
+                  Conducted extensive research on the current state of cybersecurity in various businesses, and existing cybersecurity education methods. Analysed existing training programs, awareness campaigns and previously attempted solutions. Identified key areas for improvement and outlined aims and objectives.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-xl font-semibold mb-4">Design & Implementation</h3>
                 <p className="text-muted-foreground">
-                  Created engaging scenarios based on real-world cybersecurity incidents. Developed a comprehensive scoring system and progress tracking mechanisms.
+                  Wrote a basic narrative for the game that would immerse players into the game before introducing training elements. After this, I designed game mechanics based on cyber threats; including Phishing, Spoofing, Social Engineering and more.
+                </p>
+                <p></p>
+                <p className="text-muted-foreground">
+                  Implemented game mechanics in Unity, using OOP principles in C# to create interactions between players, objects, AI controlled characters and other mechanics. Also added dialogue, a scoring system and different levels.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-xl font-semibold mb-4">Testing & Validation</h3>
                 <p className="text-muted-foreground">
-                  Conducted user testing with various demographic groups. Gathered feedback and iteratively improved the game mechanics and educational content.
+                  Conducted user testing with various demographic groups. Gathered feedback and iteratively improved the game mechanics and educational content. Upon completion, handpicked playtesters with varying levels of cybersecurity knowledge and experience. Asked players questions both before and after playing a quick demo build.
                 </p>
               </div>
             </div>

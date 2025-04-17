@@ -88,11 +88,11 @@ export default function Home() {
               Tolu Olasupo
             </h1>
             <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-6 sm:mb-8 text-center">
-              Software Engineer & Full-Stack Developer
+              Software Engineer & Full-Stack Developer 
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 text-center px-4">
               Building innovative solutions with modern technologies. 
-              Specialized in full-stack development, machine learning, and cloud architecture.
+              Specialised in full-stack development, machine learning, with exposure to cloud engineering and data analytics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
@@ -202,7 +202,7 @@ export default function Home() {
                       width={24}
                       height={24}
                     />
-                    Python / Django
+                    Python 
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -256,12 +256,30 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
+                      src="https://i.imgur.com/gx3QnTK.png"
+                      alt="Power BI"
+                      width={24}
+                      height={24}
+                    />
+                    Celonis EMS
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
                       alt="TensorFlow"
                       width={24}
                       height={24}
                     />
                     Machine Learning
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://www.tingletreegroup.com/wp-content/uploads/2016/12/agile-icon-3.png"
+                      alt="Agile"
+                      width={24}
+                      height={24}
+                    />
+                    Lean Agile
                   </li>
                 </ul>
               </div>
