@@ -1,1 +1,3 @@
-# portfolio-v3
+# This version of my portfolio was created with the assistance of generative AI, primarily to modernise the previous version of the website. The older version of this website is also available on my Github in a separate repository.
+
+# The aim of this project, aside from updating my portfoli, was to further explore the capabalities and applications of generative AI. While these technologies are great for performing smaller scale tasks, they often fail when it comes to more complex tasks that require knowledge that is difficult to explain within a single prompt. Even with prompt engineering, these tools still require a highly knowledgeable engineer to add their own knowledge and add the missing parts that only a person can see.  

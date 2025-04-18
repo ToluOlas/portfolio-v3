@@ -61,10 +61,9 @@ export default function BudgetProject() {
             
             <h3 className="text-xl font-semibold mb-4">Key Features</h3>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
-              <li>Expense tracking and categorization</li>
+              <li>Expense tracking and categorisation</li>
               <li>Budget planning tools</li>
               <li>Cheaper alternative suggestions</li>
-              <li>Financial insights and analytics</li>
               <li>Savings goals tracking</li>
               <li>Educational resources on financial management</li>
             </ul>
@@ -94,7 +93,7 @@ export default function BudgetProject() {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Implementation</h3>
                 <p className="text-muted-foreground">
-                  Used agile scrum methodology for development. Created a responsive web interface and implemented core financial tracking features.
+                  Used agile scrum methodology for development. Created a responsive web interface and implemented core financial tracking features. Leadership would rotate every two weeks upon the start of each sprint.
                 </p>
               </div>
               
