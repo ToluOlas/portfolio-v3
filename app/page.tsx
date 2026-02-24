@@ -33,7 +33,7 @@ export default function Home() {
       title: "2D Action Platformer",
       description: "A basic platformer developed in Unity. Contains a basic storyline, three platformer levels of increasing difficulty, and a boss battle. Players can unlock different moves on each level, with different AI-controlled enemies introduced as the game progresses.",
       tech: ["C#", ".NET", "Unity"],
-      image: "/images/platformer.png",
+      image: "/portfolio-v3/components/webImages/platformerImg.png",
       link: "/projects/platformer",
       icon: <Gamepad2 className="w-6 h-6 text-blue-500" />
     },
