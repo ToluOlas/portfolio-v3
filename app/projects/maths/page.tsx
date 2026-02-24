@@ -25,7 +25,7 @@ export default function MathsProject() {
           <h1 className="text-4xl font-bold mb-6">Maths Revision Program</h1>
           <div className="relative h-[400px] w-full mb-8 rounded-lg overflow-hidden">
             <Image
-              src="/images/maths.png"
+              src="https://i.imgur.com/X3WGEHo.png"
               alt="Maths Revision Program"
               fill
               className="object-cover"
