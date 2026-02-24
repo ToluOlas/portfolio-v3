@@ -25,7 +25,7 @@ export default function BudgetProject() {
           <h1 className="text-4xl font-bold mb-6">Student Budgeting App</h1>
           <div className="relative h-[400px] w-full mb-8 rounded-lg overflow-hidden">
             <Image
-              src="https://i.imgur.com/Ac48wQc.png"
+              src="https://i.ibb.co/6cb77fvh/budgetaward-Img.png"
               alt="Student Budgeting App"
               fill
               className="object-cover"
