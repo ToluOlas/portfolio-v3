@@ -33,7 +33,7 @@ export default function Home() {
       title: "2D Action Platformer",
       description: "A basic platformer developed in Unity. Contains a basic storyline, three platformer levels of increasing difficulty, and a boss battle. Players can unlock different moves on each level, with different AI-controlled enemies introduced as the game progresses.",
       tech: ["C#", ".NET", "Unity"],
-      image: "https://i.postimg.cc/9RPQDsXF/platformer-Img.png",
+      image: "https://i.ibb.co/1fPLTGYq/platformer-Img.png",
       link: "/projects/platformer",
       icon: <Gamepad2 className="w-6 h-6 text-blue-500" />
     },
@@ -41,7 +41,7 @@ export default function Home() {
       title: "Cybersecurity Training and Awareness",
       description: "Designed and developed an educational RPG to improve cybersecurity awareness. Combined gamification and scenario-based learning to teach cybersecurity fundamentals, enhancing long-term knowledge retention.",
       tech: ["C#", ".NET", "Unity", "Excel"],
-      image: "https://i.postimg.cc/vg7Z4C8Q/cybersecurity-Img.png",
+      image: "https://i.ibb.co/JjL0jrvJ/cybersecurity-Img.png",
       link: "/projects/cybersecurity",
       icon: <Shield className="w-6 h-6 text-blue-500" />
     },
@@ -49,7 +49,7 @@ export default function Home() {
       title: "Maths Revision Program",
       description: "An app developed in Python designed to teach and test people on A Level Mathematics. Covers pure maths, mechanics and statistics, with summaries on every topic and randomized tests for each subject.",
       tech: ["Python", "tkinter", "Photoshop"],
-      image: "https://i.postimg.cc/r0GwD7yy/maths-Img.png",
+      image: "https://i.ibb.co/tTBckBhc/maths-Img.png",
       link: "/projects/maths",
       icon: <Calculator className="w-6 h-6 text-blue-500" />
     },
@@ -57,7 +57,7 @@ export default function Home() {
       title: "Student Budgeting App",
       description: "A group project meeting UN goals of No Poverty and Quality Education. Created a website for students to track spending and recommend cheaper alternatives, using agile scrum methodology.",
       tech: ["HTML/CSS/JS", "Bootstrap", "MySQL"],
-      image: "https://i.postimg.cc/wyYBT9zy/budgetaward-Img.png",
+      image: "https://i.ibb.co/6cb77fvh/budgetaward-Img.png",
       link: "/projects/budget",
       icon: <Wallet className="w-6 h-6 text-blue-500" />
     }
@@ -77,7 +77,7 @@ export default function Home() {
           >
             <div className="mb-8 relative w-24 h-24 sm:w-32 sm:h-32 mx-auto">
               <Image
-                src="https://i.imgur.com/xXgqOjR.png"
+                src="https://i.ibb.co/d0nZ6ydQ/profile-Img.png"
                 alt="Tolu Olasupo"
                 fill
                 className="rounded-full object-cover border-4 border-blue-500/20"
@@ -256,7 +256,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://i.imgur.com/gx3QnTK.png"
+                      src="https://i.ibb.co/4RcwhJsp/celonis-Icon.png"
                       alt="Power BI"
                       width={24}
                       height={24}
