@@ -25,7 +25,7 @@ export default function CybersecurityProject() {
           <h1 className="text-4xl font-bold mb-6">Cybersecurity Training and Awareness</h1>
           <div className="relative h-[400px] w-full mb-8 rounded-lg overflow-hidden">
             <Image
-              src="https://i.imgur.com/P1hNMEP.png"
+              src="/images/cybersecurity.png"
               alt="Cybersecurity Training RPG"
               fill
               className="object-cover"

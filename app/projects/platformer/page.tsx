@@ -25,7 +25,7 @@ export default function PlatformerProject() {
           <h1 className="text-4xl font-bold mb-6">2D Action Platformer</h1>
           <div className="relative h-[400px] w-full mb-8 rounded-lg overflow-hidden">
             <Image
-              src="https://i.imgur.com/MANJXcH.png"
+              src="/images/platformer.png"
               alt="2D Action Platformer"
               fill
               className="object-cover"
