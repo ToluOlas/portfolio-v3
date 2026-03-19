@@ -57,8 +57,14 @@ export default function CybersecurityProject() {
           <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
             <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
             <p className="text-muted-foreground mb-6">
-              Most people know cybersecurity matters. Most people still get phished. <br />
-              The problem isn't a lack of information — it's that traditional training doesn't stick. Campaigns inform. Courses certify. Neither creates the kind of practical, memorable experience that actually changes behaviour. At least that's what 85% of companies believe despite spending so much money yearly to train their employees not to click on a link for a free holiday, or leave their computer open and unmanned when going on break. And you can't exactly let someone experience a real data breach for the sake of a lesson.<br />
+              Most people know cybersecurity matters. Most people still get phished.
+            </p>
+
+            <p className="text-muted-foreground mb-6">
+              The problem isn't a lack of information — it's that traditional training doesn't stick. Campaigns inform. Courses certify. Neither creates the kind of practical, memorable experience that actually changes behaviour. At least that's what 85% of companies believe despite spending so much money yearly to train their employees not to click on a link for a free holiday, or leave their computer open and unmanned when going on break. And you can't exactly let someone experience a real data breach for the sake of a lesson.
+            </p>
+
+            <p className="text-muted-foreground mb-6">
               That gap is what this project set out to close.
             </p>
 
@@ -67,12 +73,8 @@ export default function CybersecurityProject() {
             </p>
 
             <p className="text-muted-foreground mb-6">
-              The game covers phishing, social engineering, spoofing, insider threats, brute force attacks, and man-in-the-middle attacks — not as topics to memorise, but as mechanics to survive.
-              Each threat has its own gameplay system: a live email inbox where players must distinguish legitimate messages from deceptive ones, a passcode scanner that penalises weak passwords in real time, a deteriorating Wi-Fi connection that mirrors unsecured network risks, and roaming NPCs who will exploit an unlocked computer the moment you even THINK of stepping out of your cubicle to do anything else.
-            </p>
-
-            <p className="text-muted-foreground mb-6">
-              The technical stack — C#, Unity, and an agile development process — supported four fully playable levels, each introducing new mechanics progressively, woven together by a story designed to make every rule feel like it had consequences.
+              The game covers phishing, social engineering, spoofing, insider threats, brute force attacks, and man-in-the-middle attacks. Not as topics to memorise, but as mechanics to survive.
+              Each threat has its own gameplay mechanic: a live email inbox where players must distinguish legitimate messages from deceptive ones, a passcode scanner that penalises weak passwords in real time, a deteriorating Wi-Fi connection that mirrors unsecured network risks, and roaming NPCs who will exploit an unlocked computer the moment you even THINK of stepping out of your cubicle to do anything else.
             </p>
 
             <p className="text-muted-foreground mb-6">
