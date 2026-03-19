@@ -61,6 +61,24 @@ export default function CybersecurityProject() {
               The problem isn't a lack of information — it's that traditional training doesn't stick. Campaigns inform. Courses certify. Neither creates the kind of practical, memorable experience that actually changes behaviour. At least that's what 85% of companies believe despite spending so much money yearly to train their employees not to click on a link for a free holiday, or leave their computer open and unmanned when going on break. And you can't exactly let someone experience a real data breach for the sake of a lesson.<br>
               That gap is what this project set out to close.
             </p>
+
+            <p className="text-muted-foreground mb-6">
+              Workday for a Weekday is a 2D RPG built in Unity, designed to teach cybersecurity awareness through scenario based gameplay rather than plain information recital. Players step into the role of Steve, a new hire at Corpo — a company quietly falling apart from the inside, where colleagues sabotage each other, management is negligent, and every workday brings a new wave of cyber threats to navigate.
+            </p>
+
+            <p className="text-muted-foreground mb-6">
+              The game covers phishing, social engineering, spoofing, insider threats, brute force attacks, and man-in-the-middle attacks — not as topics to memorise, but as mechanics to survive.
+              Each threat has its own gameplay system: a live email inbox where players must distinguish legitimate messages from deceptive ones, a passcode scanner that penalises weak passwords in real time, a deteriorating Wi-Fi connection that mirrors unsecured network risks, and roaming NPCs who will exploit an unlocked computer the moment you even THINK of stepping out of your cubicle to do anything else.
+            </p>
+
+            <p className="text-muted-foreground mb-6">
+              The technical stack — C#, Unity, and an agile development process — supported four fully playable levels, each introducing new mechanics progressively, woven together by a story designed to make every rule feel like it had consequences.
+            </p>
+
+            <p className="text-muted-foreground mb-6">
+              The results backed it up.
+              After playing, participants showed a 34% average increase in cybersecurity knowledge, a 76% improvement in threat recognition, and perhaps most tellingly, 100% said they preferred this method of learning over reading, lectures, seminars, and video content. Even participants who already had formal cybersecurity training.
+            </p>
             
             <h3 className="text-xl font-semibold mb-4">Key Features</h3>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
