@@ -74,6 +74,11 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-6">
               The technical stack — C#, Unity, and an agile development process — supported four fully playable levels, each introducing new mechanics progressively, woven together by a story designed to make every rule feel like it had consequences.
             </p>
+
+            <p className="text-muted-foreground mb-6">
+              The results backed it up.
+              After playing, participants showed a 34% average increase in cybersecurity knowledge, a 76% improvement in threat recognition, and perhaps most tellingly, 100% said they preferred this method of learning over reading, lectures, seminars, and video content. Even participants who already had formal cybersecurity training.
+            </p>
             
             <h3 className="text-xl font-semibold mb-4">Key Features</h3>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
