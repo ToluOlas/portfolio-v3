@@ -22,7 +22,7 @@ export default function CybersecurityProject() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-6">Cybersecurity Training and Awareness</h1>
+          <h1 className="text-4xl font-bold mb-6">Workday for a Weekday - Cybersecurity Training and Awareness</h1>
           <div className="relative h-[400px] w-full mb-8 rounded-lg overflow-hidden">
             <Image
               src="https://i.ibb.co/JjL0jrvJ/cybersecurity-Img.png"
@@ -57,7 +57,9 @@ export default function CybersecurityProject() {
           <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
             <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
             <p className="text-muted-foreground mb-6">
-              An educational RPG designed to improve cybersecurity awareness through gamification. The project combines engaging gameplay mechanics with real-world cybersecurity scenarios to create an effective learning experience.
+              Most people know cybersecurity matters. Most people still get phished.
+              The problem isn't a lack of information — it's that traditional training doesn't stick. Campaigns inform. Courses certify. Neither creates the kind of practical, memorable experience that actually changes behaviour. And you can't exactly let someone experience a real data breach for the sake of a lesson.
+              That gap is what this project set out to close.
             </p>
             
             <h3 className="text-xl font-semibold mb-4">Key Features</h3>
