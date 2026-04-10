@@ -99,7 +99,7 @@ export default function CybersecurityProject() {
               </div>
               <div className="w-1/2 shrink-0">
                 <img
-                  src="https://i.ibb.co/MJHTJ47/fortinet2023.png"
+                  src="/fortinet2023.png"
                   alt="Fortinet 2023 cybersecurity report"
                   className="w-full object-contain"
                 />
@@ -132,7 +132,7 @@ export default function CybersecurityProject() {
             <h3 className="text-xl font-semibold mt-8 mb-4">The Role of Serious Games</h3>
 
             <img
-              src="https://i.ibb.co/qYgtGS8n/vital-signs.jpg"
+              src="/vital signs.jpg"
               alt="Vital Signs: ED simulation game screenshot"
               className="mx-auto block w-1/2 object-contain rounded-lg"
             />
@@ -166,7 +166,7 @@ export default function CybersecurityProject() {
             <div className="flex gap-8 items-center">
               <div className="w-1/6 shrink-0">
                 <img
-                  src="https://i.ibb.co/bj2PM1JZ/steve.png"
+                  src="/steve.png"
                   alt="Steve character sprite"
                   className="w-full object-contain rounded-lg"
                 />
@@ -189,6 +189,229 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mt-6">
               The workplace setting puts the player in exactly the kind of environment where cybersecurity threats reside, and where the consequences of poor decisions are felt the most. The narrative is purposefully on the nose, as it sets up a setting that will bombard the player with situations where cybersecurity is at risk, and reinforce the best preventative measures.
             </p>
+
+
+            <h3 className="text-xl font-semibold mt-10 mb-4">Identifying Common Threats</h3>
+            <p className="text-muted-foreground mb-6">
+              Before any mechanics were designed, the scope of what the game needed to teach had to be defined. The goal was to identify the specific attacks and human errors most responsible for real-world breaches, and use those as the foundation for the game's design. Research into industry reports and existing training programs pointed to a consistent set of threats:
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left border-collapse">
+                <thead>
+                  <tr className="bg-blue-50/80 dark:bg-blue-950/50">
+                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900 w-1/4">Threat</th>
+                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Description</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-foreground">
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Malware</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Software designed to damage or infiltrate a system. Includes viruses, ransomware, trojans, and spyware.</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Phishing</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Attackers impersonate trusted entities via email, text, or fake websites to steal sensitive information.</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Spoofing</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Impersonating another source — an email address, a website, a caller ID — to deceive users or gain unauthorised access.</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Brute Force / Weak Passwords</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Systematically guessing passwords until the correct one is found. Simple or repeated passwords make this trivially easy.</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Insider Threats</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Individuals within an organisation, intentionally or accidentally, misusing access to compromise systems or data.</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Man-in-the-Middle</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">A third party secretly intercepts communication between two parties, often over unsecured networks.</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Social Engineering</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Manipulating people psychologically into divulging information or granting access, without any technical exploit.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p className="text-muted-foreground mt-6">
+              A notable observation during this stage was how much overlap exists between these threats. Phishing frequently delivers malware. Spoofing is often used in conjunction with social engineering. Weak passwords make brute force attacks significantly easier. Where threats naturally connected, the design grouped them together, which also informed how mechanics were structured and layered.
+            </p>
+
+            {/* From threat to mechanic */}
+            <h3 className="text-xl font-semibold mt-10 mb-4">From Threat to Game Mechanic</h3>
+            <p className="text-muted-foreground mb-6">
+              With the threat landscape defined, each one needed to be translated into a gameplay mechanic that players could actively experience. The following outlines each mechanic, the threat it was designed to represent, and what behaviour it was intended to train.
+            </p>
+
+            {/* Email System */}
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Email System — Phishing, Spoofing &amp; Social Engineering</h4>
+            <img src="/email screen screenshot.png" alt="Screenshot of the computer UI in Unity, displaying the email screen" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <p className="text-xs text-muted-foreground text-center mt-1">Screenshot of the computer UI in Unity, displaying the email screen</p>
+            <p className="text-muted-foreground mt-6">
+              The email system is the core gameplay mechanic. Each level, the player receives a set number of emails that must be cleared from the inbox within the time limit. Emails are a mix of legitimate company correspondence and malicious ones, and the player must respond to each with one of two options: Reply or Report.
+            </p>
+            <div className="flex gap-8 items-center mt-6">
+              <p className="text-muted-foreground flex-1">
+                Identifying the correct response requires attention to detail. Legitimate company emails use the @corpo.com domain. Spoofed emails use near identical variations of the domain. Some emails originate from real employees but contain malicious content or requests, while others may appear suspicious but are genuine. This diversity trains players to assess the full context of a message rather than rely on surface level info.
+              </p>
+              <div className="overflow-x-auto w-1/2 shrink-0">
+                <table className="w-full text-sm text-left border-collapse">
+                  <thead>
+                    <tr className="bg-blue-50/80 dark:bg-blue-950/50">
+                      <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Sender</th>
+                      <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Email Message</th>
+                      <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Correct Action</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-muted-foreground">
+                    <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                      <td className="px-4 py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpo.com</td>
+                      <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">"Please enable two factor authentication here:"</td>
+                      <td className="px-4 py-3 font-semibold text-green-600 dark:text-green-400 border border-blue-100 dark:border-blue-900">REPLY</td>
+                    </tr>
+                    <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                      <td className="px-4 py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpol.com</td>
+                      <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">"Please enable two factor authentication here:"</td>
+                      <td className="px-4 py-3 font-semibold text-red-600 dark:text-red-400 border border-blue-100 dark:border-blue-900">REPORT</td>
+                    </tr>
+                    <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                      <td className="px-4 py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpo.com</td>
+                      <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">"Please send me your account details."</td>
+                      <td className="px-4 py-3 font-semibold text-red-600 dark:text-red-400 border border-blue-100 dark:border-blue-900">REPORT</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p className="text-muted-foreground mt-6">
+              Certain emails trigger an additional compose-email minigame, where the player must select the correct recipient and attach the correct file before sending. Selecting either field incorrectly results in a point deduction, representing the real-world risk of misdirected sensitive information.
+            </p>
+            <img src="/reply screen screenshot.png" alt="Compose-email reply screen UI in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-6" />
+            <p className="text-xs text-muted-foreground text-center mt-1">Compose-email reply screen UI in Unity</p>
+
+            {/* Office & NPC System */}
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Office &amp; NPC System — Insider Threats</h4>
+            <img src="/npc random movement screenshot.png" alt="NPCs walking around the office randomly along the grid in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <p className="text-xs text-muted-foreground text-center mt-1">NPCs walking around the office randomly along the grid in Unity</p>
+            <p className="text-muted-foreground mt-6">
+              Insider threats and physical security risks were represented through the office environment. NPCs move around the office throughout each level following a grid-based movement system. If the player leaves their desk without logging out of their computer, there is a chance that a passing NPC will tamper with it, resulting in a point deduction. This mechanic directly represents the risk of leaving a device unlocked and unattended in a shared workspace.
+            </p>
+            <p className="text-muted-foreground mt-6">
+              To create situations where the player must leave their desk, a machine maintenance minigame was implemented. Devices around the office break at random intervals, and leaving them broken for too long also results in a point deduction. This creates a recurring conflict between staying at the computer to manage emails and moving around the office to maintain equipment, while ensuring the screen remains locked when unattended.
+            </p>
+            <img src="/machine locations upscale.png" alt="Office marked with machine locations that must be fixed if broken" className="mx-auto block w-1/2 object-contain rounded-lg mt-6" />
+            <p className="text-xs text-muted-foreground text-center mt-1">Office marked with machine locations that must be fixed if broken</p>
+
+            {/* Passcode Scanner */}
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Passcode Scanner — Brute Force &amp; Weak Passwords</h4>
+            <img src="/passcode scanner mockup.png" alt="Passcode Scanner Mock-Up" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <p className="text-xs text-muted-foreground text-center mt-1">Passcode Scanner Mock-Up</p>
+            <p className="text-muted-foreground text-left mt-6">
+              The passcode scanner is triggered by specific emails and requires the player to leave their desk and interact with a physical scanner object in the office. The player creates a passcode using a grid of coloured symbols — circles, diamonds, and hearts in red, blue, and green — to begin a document scan.
+            </p>
+
+            <div className="flex gap-6 items-center mt-6">
+              <div className="flex flex-col flex-1 gap-4">
+                <p className="text-muted-foreground">
+                  The scan takes approximately 15 seconds to complete, during which the player is expected to return to other tasks. Once complete, the player must re-enter the same passcode from memory within three attempts.
+                </p>
+                <p className="text-muted-foreground">
+                  The passcode is evaluated against four criteria: length, colour diversity, shape diversity, and whether it forms a simple repeating sequence. A passcode that fails any of these criteria results in a point deduction, regardless of whether it was recalled correctly. This is designed to reinforce the understanding that a memorable but weak password offers little real protection.
+                </p>
+              </div>
+              <div className="w-fit shrink-0">
+                <img src="/passcode examples.jpg" alt="Examples of good and bad passcodes" className="h-64 w-auto object-contain rounded-lg" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Examples of good and bad passcodes</p>
+              </div>
+            </div>
+
+            {/* Wi-Fi System */}
+            <div className="flex gap-6 items-center mt-8">
+              <div className="flex flex-col flex-1 gap-4">
+                <h4 className="text-lg font-semibold mb-3">The Wi-Fi System — Man-in-the-Middle Attacks</h4>
+                <p className="text-muted-foreground">
+                  The Wi-Fi mechanic runs automatically in the background from the start of the level. The company network connection degrades gradually over time, moving between connection strength states. If the connection is poor enough, the player is automatically switched to an unsecured street network, at which point points begin to deplete for as long as the unsecured connection remains active.
+                </p>
+                <p className="text-muted-foreground">
+                  The player can monitor connection strength through the settings screen and troubleshoot it before it drops, or reconnect after a dropout. Both actions consume time. The mechanic is intended to build awareness of network security as an ongoing responsibility rather than a one-time action.
+                </p>
+              </div>
+              <div className="w-fit shrink-0">
+                <img src="/WiFi connections and their statuses.png" alt="Wi-Fi connections and their statuses" className="h-64 w-auto object-contain rounded-lg" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Wi-Fi connections and their statuses</p>
+              </div>
+            </div>
+
+            {/* The story layer */}
+            <h3 className="text-xl font-semibold mt-10 mb-4">The story layer</h3>
+            <p className="text-muted-foreground mb-6">
+              The game's story was designed to contextualise the mechanics and give players a reason to engage with the cybersecurity content beyond the gameplay alone. Each mechanic is introduced through character dialogue, which also advances the plot and establishes why each threat matters in the context of Steve's situation.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Four characters carry the narrative: Steve, the player character; Mark, the negligent manager whose behaviour enables a hostile work environment; Fred, Steve's line manager who introduces new mechanics and offers guidance; and Q, a mysterious figure outside the Corpo building who provides background on the threats Steve will face each day.
+            </p>
+            <div className="flex gap-6 mt-4">
+              <div className="flex-1">
+                <img src="/exampledialogue1.png" alt="Dialogue Example 1" className="w-full object-contain rounded-lg" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Dialogue Example 1</p>
+              </div>
+              <div className="flex-1">
+                <img src="/exampledialogue2.png" alt="Dialogue Example 2" className="w-full object-contain rounded-lg" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Dialogue Example 2</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mt-6 mb-4">
+              Mechanics are introduced progressively across each level, with each day adding new systems:
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left border-collapse">
+                <thead>
+                  <tr className="bg-blue-50/80 dark:bg-blue-950/50">
+                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900 w-1/4">Level</th>
+                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Mechanics Included</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-foreground">
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 1</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Email System</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 2</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Email System, Machine Maintenance, Compose Emails</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 3</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Email System, Machine Maintenance, Compose Emails, Passcode Scanner, Wi-Fi Connection</td>
+                  </tr>
+                  <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
+                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 4</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">All of the above</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-muted-foreground mt-6">
+              This gradual introduction avoids overwhelming players before they develop familiarity with each individual system. Introducing them one at a time allowed each mechanic to be understood and practised before the next was added.
+            </p>
+
+            {/* Visual style */}
+            <div className="flex gap-6 items-center mt-10">
+              <div className="flex flex-col flex-1 gap-4">
+                <h3 className="text-xl font-semibold">Visual style</h3>
+                <p className="text-muted-foreground">
+                  The game uses a pixelated 2D top-down perspective, built in Unity using open-source tilesets assembled in Tiled, a 2D map editor that exports directly into Unity. The visual style was chosen primarily for its clarity. A top-down office environment is immediately readable, character movement is easy to follow, and the aesthetic keeps the focus on the gameplay systems rather than the visuals. The overall look was loosely inspired by late-2000s top-down RPGs, particularly the overworld style of the early Pokémon series.
+                </p>
+              </div>
+              <div className="w-fit shrink-0">
+                <img src="/pokemon DP screenshot.png" alt="Screenshot of Pokémon Diamond and Pearl, the visual reference" className="h-64 w-auto object-contain rounded-lg" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Pokémon Diamond and Pearl</p>
+              </div>
+            </div>
           </div>
 
           <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
