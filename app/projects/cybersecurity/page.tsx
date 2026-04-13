@@ -415,6 +415,158 @@ export default function CybersecurityProject() {
           </div>
 
           <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
+            <h2 className="text-2xl font-semibold mb-6">Key Systems</h2>
+            <p className="text-muted-foreground mb-8">
+              The game was built in Unity 2D using C#, with maps designed in Tiled and imported directly into Unity. This section covers the implementation of the core systems, the technical decisions made during development, and some of the more interesting problems that came up along the way.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-6">The Email System</h3>
+            <div className="flex gap-6 items-start">
+              <div className="flex-1">
+                <p className="text-muted-foreground mb-4">
+                  The email system is built around two classes: <code>email</code> and <code>emailManager</code>. The <code>email</code> class acts as a data container, storing everything needed to define and display a single email within the game. Each email object holds:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+                  <li><code>emailTopic</code>, <code>emailSender</code>, <code>emailRecipients</code>, and <code>emailMessage</code> for display purposes</li>
+                  <li>Two reply options, each with an assigned integer result value on a scale of 1 to 4, plus a separate <code>reportResult</code> for the Report action</li>
+                  <li>An <code>emailType</code> string classifying the email as safe, malicious, phishing, or spoofing</li>
+                  <li>An <code>isMinigame</code> boolean and <code>minigameType</code> string for emails that trigger additional mechanics</li>
+                </ul>
+                <p className="text-muted-foreground mb-6">
+                  Compose-email objects extend this with additional fields — three recipient options, three attachment options, and integer values identifying the correct choice for each. Everything a compose-email needs to function is self-contained within the object itself.
+                </p>
+              </div>
+              <div className="shrink-0 w-64">
+                <img src="/emailclass screenshot.png" alt="Part of the email class" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Part of the email class</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mt-6 mb-4">
+              The <code>emailManager</code> holds all emails for a given level in a list called <code>emailQueue</code> and manages the UI that displays them. When <code>updateInbox()</code> is called, if fewer than five emails remain in the queue, blank email objects are temporarily added to bring the count up to five, all five preview button slots are updated from the list, and the blanks are then removed. This keeps the UI consistently populated without requiring separate logic for partially filled inboxes.
+            </p>
+            <div className="flex gap-6 items-center mt-4">
+              <div className="flex-1">
+                <img src="/email object in CSharp.jpg" alt="Email object in C# called to game UI" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1"><code>email</code> object in C# called to game UI</p>
+              </div>
+              <div className="flex-1">
+                <img src="/parts of updateInbox in CSharp.jpg" alt="Parts of the updateInbox method in emailManager" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Parts of the <code>updateInbox</code> method in emailManager</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mt-6 mb-4">
+              When the player selects an email, <code>currentEmail</code> is updated to track which slot is active. This is a 1-indexed value while <code>emailQueue</code> is 0-indexed, so <code>removeEmail()</code> compensates by using <code>currentEmail - 1</code> when calling <code>RemoveAt()</code>. Getting this offset wrong would consistently remove the wrong email from the queue, so maintaining that synchronisation across every interaction — clicking an email, answering it, closing the computer mid-level — was the central challenge of this system.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              When the player responds to an email, the result value for the chosen option is passed to the <code>scoreManager</code>, which handles point allocation. Emails flagged as minigames open a secondary screen upon a correct reply. Compose-email types require the player to select the correct recipient and attachment before sending, with each field evaluated independently by the <code>scoreManager</code>.
+            </p>
+            <img src="/reply screen screenshot.png" alt="Compose-email reply screen UI in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <p className="text-xs text-muted-foreground text-center mt-1">Compose-email reply screen UI in Unity</p>
+
+            <h3 className="text-xl font-semibold mt-10 mb-6">The NPC &amp; Office System</h3>
+            <p className="text-muted-foreground mb-4">
+              The office environment uses two types of NPC: regular NPCs, which appear in outdoor scenes and move randomly within a defined zone, and office NPCs, which follow a grid-based movement system inside the main office area.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Office NPCs spawn at the start of each level and navigate the office using a network of nodes. When an NPC reaches a node, the node&apos;s <code>switchDirection</code> method evaluates which directions are enabled for that position and randomly selects one. If no directions are enabled, the NPC stops. This produces varied movement paths across the office without every route needing to be manually scripted.
+            </p>
+            <div className="flex gap-6 items-center mt-4 mb-6">
+              <div className="flex-1">
+                <img src="/npcmovementdraft.png" alt="Movement pattern for NPCs in the office" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Movement pattern for NPCs in the office</p>
+              </div>
+              <div className="flex-1">
+                <img src="/nodefunctionality.png" alt="switchDirection method on each node in the grid" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1"><code>switchDirection</code> method on each node in the grid</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              The security mechanic is handled by a trigger zone around the player&apos;s cubicle, managed by the <code>playerOfficeCheck</code> script. This zone tracks two things independently: whether the player is inside it, and whether any NPCs are inside it. If an NPC enters the zone while the player is absent and the computer is still logged in, <code>Random.Range(0, 2)</code> is called — a result of 1 triggers <code>vulnerablePC()</code> on the <code>scoreManager</code>, deducting points. The 50% chance reflects the unpredictable nature of insider threats rather than making the penalty feel automatic or unfair.
+            </p>
+            <img src="/officeCheckerScript.png" alt="TriggerEnter and TriggerExit scripts for the playerOfficeCheck script" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
+            <p className="text-xs text-muted-foreground text-center mb-6">TriggerEnter and TriggerExit scripts for the <code>playerOfficeCheck</code> script</p>
+            <p className="text-muted-foreground mb-4">
+              Devices around the office are assigned a random chance to break at set intervals, managed by the game manager. The player fixes them by walking to the device and interacting with it, which triggers a repair method and removes the broken status marker from both the HUD and the map.
+            </p>
+
+            <h3 className="text-xl font-semibold mt-10 mb-6">The Passcode Scanner</h3>
+            <p className="text-muted-foreground mb-4">
+              The passcode scanner is a self-contained minigame triggered by emails with a <code>minigameType</code> of <code>&quot;password&quot;</code>. The player must leave their desk and interact with a physical scanner object in the office to begin.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              The player creates a passcode by selecting from a grid of nine coloured symbols — circles, diamonds, and hearts in red, blue, and green. Each symbol maps to an integer value from 1 to 9, and the entered passcode is stored as a list of integers. A switch statement in <code>scannerController</code> handles both adding each symbol&apos;s value to the list and placing the correct symbol graphic in the correct position on the UI.
+            </p>
+            <img src="/scanner object and UI screenshot.jpg" alt="Symbol values and switch statement in scannerController" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
+            <p className="text-xs text-muted-foreground text-center mb-6">Scanner object and scanner UI</p>
+            <p className="text-muted-foreground mb-4">
+              Once the passcode is set, scanning begins and takes approximately 15 seconds to complete. The player is expected to return to other tasks during this time. When the scan finishes, the player must re-enter the passcode from memory within three attempts.
+            </p>
+            <p className="text-muted-foreground mb-2">The passcode is evaluated against four criteria by the <code>passwordMinigame</code> class:</p>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+              <li><strong>Length</strong> — the passcode must be longer than three symbols</li>
+              <li><strong>Colour diversity</strong> — symbols are grouped by colour (Red: 1,2,3 / Blue: 4,5,6 / Green: 7,8,9) and more than one colour group must be present</li>
+              <li><strong>Shape diversity</strong> — symbols are grouped by shape (Circle: 1,4,7 / Diamond: 2,5,8 / Heart: 3,6,9) and more than one shape group must be present</li>
+              <li><strong>Simple sequence check</strong> — the <code>isSimpleSequence</code> method iterates through the list and returns true if every value increments by exactly 1, flagging predictable patterns as weak</li>
+            </ul>
+            <div className="flex gap-6 items-center mt-4 mb-6">
+              <div className="flex-1">
+                <img src="/For loop for colourCount.png" alt="For loop for the colourCount method in passwordMinigame" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1">For loop for the <code>colourCount</code> method in <code>passwordMinigame</code></p>
+              </div>
+              <div className="flex-1">
+                <img src="/isSimpleSequence.png" alt="isSimpleSequence method in passwordMinigame" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1"><code>isSimpleSequence</code> method in <code>passwordMinigame</code></p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              Each criterion that fails is reported to the <code>scoreManager</code> independently, meaning a passcode can lose points for being short, lacking diversity, and being a simple sequence all at once. This was a deliberate design decision — it reinforces that password strength is not a single property but a combination of several habits applied together.
+            </p>
+
+            <h3 className="text-xl font-semibold mt-10 mb-6">Game &amp; Level Management</h3>
+            <div className="flex gap-6 items-start mb-6">
+              <div className="flex-1">
+                <p className="text-muted-foreground mb-4">
+                  The <code>gameManager</code> is the central script that controls the state of the game. It coordinates the start and end conditions of each level and acts as the point of communication between all other major systems.
+                </p>
+                <p className="text-muted-foreground mb-2">When a level begins, the <code>gameManager</code> triggers three things simultaneously:</p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+                  <li>The <code>countdownTimer</code> starts counting down</li>
+                  <li>The <code>NPCSpawner</code> begins populating the office with NPCs</li>
+                  <li>The <code>connectionStatus</code> script starts the Wi-Fi degradation cycle</li>
+                </ul>
+                <p className="text-muted-foreground">
+                  When the <code>emailQueue</code> reaches zero, the <code>emailManager</code> signals the <code>gameManager</code> to call the win sequence. The <code>gameManager</code> also monitors the <code>scoreManager</code> continuously — if the player accumulates too many high-severity mistakes, the loss sequence is triggered before the timer expires.
+                </p>
+              </div>
+              <div className="shrink-0 w-96">
+                <img src="/gameplay activity diagram.png" alt="Gameplay Activity Diagram" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Gameplay Activity Diagram</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              The <code>countdownTimer</code> script holds a <code>timeLeft</code> float that decrements every frame while <code>timerOn</code> is true. When <code>timeLeft</code> reaches zero, it calls <code>endGameLoss()</code> on the <code>gameManager</code> directly. During development, a unit test revealed that this call was missing — the timer was reaching zero and stopping without triggering the loss sequence. This was identified and resolved promptly.
+            </p>
+            <img src="placeholder" alt="Timer countdown functionality from the timer script" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20 opacity-40" />
+            <p className="text-xs text-muted-foreground text-center mb-6">Timer countdown functionality from the timer script</p>
+            <p className="text-muted-foreground mb-4">
+              The Wi-Fi system runs on a separate <code>connectionStatus</code> script that manages a <code>connectVal</code> integer ranging from 5 to 0. At set intervals, <code>wifiShift()</code> is called, which uses <code>Random.Range(0, 100)</code> and a switch statement on the current <code>connectVal</code> to determine whether the connection goes up, stays the same, or goes down. The probability of degradation increases as <code>connectVal</code> decreases — at a value of 5 the connection always drops by one, while at higher values there is a chance it holds or recovers. At zero, the player is moved onto an unsecured network and the <code>scoreManager</code> begins applying a continuous point deduction until the connection is restored.
+            </p>
+            <div className="flex gap-6 items-start mt-4 mb-6">
+              <div className="flex-1">
+                <img src="placeholder" alt="Part of the wifiShift method in the systemStatus class" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20 opacity-40" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Part of the <code>wifiShift</code> method in the <code>systemStatus</code> class</p>
+              </div>
+              <div className="flex-1">
+                <img src="/WiFi connections and their statuses.png" alt="Settings UI at connection values 3 to 0" className="w-full object-contain rounded-lg" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Settings UI at connection values 3 to 0</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              Unit testing was the main method used to validate each system as it was implemented. Testing individual components in isolation allowed issues to be identified and fixed early. The game manager unit tests in particular surfaced some synchronisation issues, which I resolved before moving on.
+            </p>
+          </div>
+
+          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
             <h3 className="text-xl font-semibold mb-4">Key Features</h3>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
               <li>Interactive scenario-based learning</li>
