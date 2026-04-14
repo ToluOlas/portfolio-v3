@@ -61,7 +61,7 @@ export default function CybersecurityProject() {
             </p>
 
             <p className="text-muted-foreground mb-6">
-              The problem isn't a lack of information — it's that traditional training doesn't stick. Campaigns inform. Courses certify. Neither creates the kind of practical, memorable experience that actually changes behaviour. At least that's what 85% of companies believe despite spending so much money yearly to train their employees not to click on a link for a free holiday, or leave their computer open and unmanned when going on break. And you can't exactly let someone experience a real data breach for the sake of a lesson.
+              The problem isn't a lack of information: it's that traditional training doesn't stick. Campaigns inform. Courses certify. Neither creates the kind of practical, memorable experience that actually changes behaviour. At least that's what 85% of companies believe despite spending so much money yearly to train their employees not to click on a link for a free holiday, or leave their computer open and unmanned when going on break. And you can't exactly let someone experience a real data breach for the sake of a lesson.
             </p>
 
             <p className="text-muted-foreground mb-6">
@@ -69,7 +69,7 @@ export default function CybersecurityProject() {
             </p>
 
             <p className="text-muted-foreground mb-6">
-              Workday for a Weekday is a 2D RPG built in Unity, designed to teach cybersecurity awareness through scenario based gameplay rather than plain information recital. Players step into the role of Steve, a new hire at Corpo — a company quietly falling apart from the inside, where colleagues sabotage each other, management is negligent, and every workday brings a new wave of cyber threats to navigate.
+              Workday for a Weekday is a 2D RPG built in Unity, designed to teach cybersecurity awareness through scenario based gameplay rather than plain information recital. Players step into the role of Steve, a new hire at Corpo, a company quietly falling apart from the inside, where colleagues sabotage each other, management is negligent, and every workday brings a new wave of cyber threats to navigate.
             </p>
 
             <p className="text-muted-foreground mb-6">
@@ -91,10 +91,10 @@ export default function CybersecurityProject() {
             <div className="flex gap-8 items-center">
               <div className="flex-1 flex flex-col gap-4">
                 <p className="text-muted-foreground">
-                  Most cybersecurity education; be it a campaign poster, an online course, or a workplace training module — is almost entirely focused on just informing. It tells you what phishing is. It explains what a strong password looks like. But information without the practical experience of applying it under pressure, rarely changes behaviour. You can know exactly what a phishing email looks like and still click the wrong link on a busy Tuesday morning.
+                  Most cybersecurity education; be it a campaign poster, an online course, or a workplace training module, is almost entirely focused on just informing. It tells you what phishing is. It explains what a strong password looks like. But information without the practical experience of applying it under pressure, rarely changes behaviour. You can know exactly what a phishing email looks like and still click the wrong link on a busy Tuesday morning.
                 </p>
                 <p className="text-muted-foreground">
-                  Second, cybersecurity is uniquely difficult to practice. Unlike learning to drive, where the consequences of mistakes are immediate and real, you can't safely put someone in front of a genuine cyber threat just to teach them a lesson. That gap — between knowing and doing — is where most training falls short.
+                  Second, cybersecurity is uniquely difficult to practice. Unlike learning to drive, where the consequences of mistakes are immediate and real, you can't safely put someone in front of a genuine cyber threat just to teach them a lesson. That gap between knowing and doing is where most training falls short.
                 </p>
               </div>
               <div className="w-1/2 shrink-0">
@@ -146,7 +146,7 @@ export default function CybersecurityProject() {
             </div>
 
             <p className="text-muted-foreground mt-6">
-              So why a simulation game? Games are not new to the field of education and training. Your first thought might be those simple numbers games that kids might play on a tablet, but serious games stand tall in even some of the most stressful, high-level work environments you can think of. Take Vital Signs: ED — a simulation game built around working in a hospital emergency department. It mimics a real high-stakes situation, giving players a risk-free environment to build instincts that transfer directly to real practice. Studies have shown it measurably improves the real-world performance of professionals, including surgeons, in genuine medical situations.
+              So why a simulation game? Games are not new to the field of education and training. Your first thought might be those simple numbers games that kids might play on a tablet, but serious games stand tall in even some of the most stressful, high-level work environments you can think of. Take Vital Signs: ED, a simulation game built around working in a hospital emergency department. It mimics a real high-stakes situation, giving players a risk-free environment to build instincts that transfer directly to real practice. Studies have shown it measurably improves the real-world performance of professionals, including surgeons, in genuine medical situations.
             </p>
 
             <p className="text-muted-foreground mt-6">
@@ -154,14 +154,14 @@ export default function CybersecurityProject() {
             </p>
 
             <p className="text-muted-foreground mt-6">
-              Serious games are not perfect though, most of them almost never escape the room they were built for. They tend to live exclusively in formal settings; used by organisations already convinced of their value, and rarely by anyone else. No distribution in commercial game stores, no replay value, no reason to return once the training is done. Compare that to something like <em>Wii Fit™</em> — a game built around fitness that found a massive audience far beyond the gym, simply because Nintendo remembered it also had to be fun. If a serious game is going to reach people who aren't already looking for it, it has to earn their attention as a game first, and teach them second. This is where I introduce you to my solution...
+              Serious games are not perfect though, most of them almost never escape the room they were built for. They tend to live exclusively in formal settings; used by organisations already convinced of their value, and rarely by anyone else. No distribution in commercial game stores, no replay value, no reason to return once the training is done. Compare that to something like <em>Wii Fit™</em>, a game built around fitness that found a massive audience far beyond the gym, simply because Nintendo remembered it also had to be fun. If a serious game is going to reach people who aren't already looking for it, it has to earn their attention as a game first, and teach them second. This is where I introduce you to my solution...
             </p>
 
 
           </div>
 
           <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
-            <h2 className="text-2xl font-semibold mb-6">Design — Meet the Team</h2>
+            <h2 className="text-2xl font-semibold mb-6">Design: Meet the Team</h2>
 
             <div className="flex gap-8 items-center">
               <div className="w-1/6 shrink-0">
@@ -184,7 +184,7 @@ export default function CybersecurityProject() {
               ...meet Steve.
             </p>
             <p className="text-muted-foreground mt-6">
-              Steve is a new hire at Corpo — a company that, on the surface, looks like any other office job. But underneath, it's a workplace quietly tearing itself apart. Employees sabotage each other to get ahead, management turns a blind eye to everything, and every single workday brings a fresh wave of cyber threats that Steve has to navigate just to keep his job. Players step into his shoes and experience a week at Corpo, with each day introducing new challenges, new mechanics inspired by real cyber threats, and a story that gets progressively harder to ignore as it directly impacts gameplay.
+              Steve is a new hire at Corpo, a company that on the surface, looks like any other office job. But underneath, it's a workplace quietly tearing itself apart. Employees sabotage each other to get ahead, management turns a blind eye to everything, and every single workday brings a fresh wave of cyber threats that Steve has to navigate just to keep his job. Players step into his shoes and experience a week at Corpo, with each day introducing new challenges, new mechanics inspired by real cyber threats, and a story that gets progressively harder to ignore as it directly impacts gameplay.
             </p>
             <p className="text-muted-foreground mt-6">
               The workplace setting puts the player in exactly the kind of environment where cybersecurity threats reside, and where the consequences of poor decisions are felt the most. The narrative is purposefully on the nose, as it sets up a setting that will bombard the player with situations where cybersecurity is at risk, and reinforce the best preventative measures.
@@ -215,7 +215,7 @@ export default function CybersecurityProject() {
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
                     <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Spoofing</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Impersonating another source — an email address, a website, a caller ID — to deceive users or gain unauthorised access.</td>
+                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Impersonating another source (an email address, a website, a caller ID) to deceive users or gain unauthorised access.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
                     <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Brute Force / Weak Passwords</td>
@@ -248,7 +248,7 @@ export default function CybersecurityProject() {
             </p>
 
             {/* Email System */}
-            <h4 className="text-lg font-semibold mt-8 mb-6">The Email System — Phishing, Spoofing &amp; Social Engineering</h4>
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Email System: Phishing, Spoofing &amp; Social Engineering</h4>
             <img src="/email screen screenshot.png" alt="Screenshot of the computer UI in Unity, displaying the email screen" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">Screenshot of the computer UI in Unity, displaying the email screen</p>
             <p className="text-muted-foreground mt-6">
@@ -294,7 +294,7 @@ export default function CybersecurityProject() {
             <p className="text-xs text-muted-foreground text-center mt-1">Compose-email reply screen UI in Unity</p>
 
             {/* Office & NPC System */}
-            <h4 className="text-lg font-semibold mt-8 mb-6">The Office &amp; NPC System — Insider Threats</h4>
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Office &amp; NPC System: Insider Threats</h4>
             <img src="/npc random movement screenshot.png" alt="NPCs walking around the office randomly along the grid in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">NPCs walking around the office randomly along the grid in Unity</p>
             <p className="text-muted-foreground mt-6">
@@ -307,11 +307,11 @@ export default function CybersecurityProject() {
             <p className="text-xs text-muted-foreground text-center mt-1">Office marked with machine locations that must be fixed if broken</p>
 
             {/* Passcode Scanner */}
-            <h4 className="text-lg font-semibold mt-8 mb-6">The Passcode Scanner — Brute Force &amp; Weak Passwords</h4>
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Passcode Scanner: Brute Force &amp; Weak Passwords</h4>
             <img src="/passcode scanner mockup.png" alt="Passcode Scanner Mock-Up" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">Passcode Scanner Mock-Up</p>
             <p className="text-muted-foreground text-left mt-6">
-              The passcode scanner is triggered by specific emails and requires the player to leave their desk and interact with a physical scanner object in the office. The player creates a passcode using a grid of coloured symbols — circles, diamonds, and hearts in red, blue, and green — to begin a document scan.
+              The passcode scanner is triggered by specific emails and requires the player to leave their desk and interact with a physical scanner object in the office. The player creates a passcode using a grid of coloured symbols (circles, diamonds, and hearts in red, blue, and green) to begin a document scan.
             </p>
 
             <div className="flex gap-6 items-center mt-6">
@@ -332,7 +332,7 @@ export default function CybersecurityProject() {
             {/* Wi-Fi System */}
             <div className="flex gap-6 items-center mt-8">
               <div className="flex flex-col flex-1 gap-4">
-                <h4 className="text-lg font-semibold mb-3">The Wi-Fi System — Man-in-the-Middle Attacks</h4>
+                <h4 className="text-lg font-semibold mb-3">The Wi-Fi System: Man-in-the-Middle Attacks</h4>
                 <p className="text-muted-foreground">
                   The Wi-Fi mechanic runs automatically in the background from the start of the level. The company network connection degrades gradually over time, moving between connection strength states. If the connection is poor enough, the player is automatically switched to an unsecured street network, at which point points begin to deplete for as long as the unsecured connection remains active.
                 </p>
@@ -356,11 +356,11 @@ export default function CybersecurityProject() {
             </p>
             <div className="flex gap-6 mt-4">
               <div className="flex-1">
-                <img src="/exampledialogue1.png" alt="Dialogue Example 1" className="w-full object-contain rounded-lg" />
+                <img src="/exampledialogue1.png" alt="Dialogue Example 1" className="w-[90%] mx-auto block object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Dialogue Example 1</p>
               </div>
               <div className="flex-1">
-                <img src="/exampledialogue2.png" alt="Dialogue Example 2" className="w-full object-contain rounded-lg" />
+                <img src="/exampledialogue2.png" alt="Dialogue Example 2" className="w-[90%] mx-auto block object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Dialogue Example 2</p>
               </div>
             </div>
@@ -433,7 +433,7 @@ export default function CybersecurityProject() {
                   <li>An <code>isMinigame</code> boolean and <code>minigameType</code> string for emails that trigger additional mechanics</li>
                 </ul>
                 <p className="text-muted-foreground mb-6">
-                  Compose-email objects extend this with additional fields — three recipient options, three attachment options, and integer values identifying the correct choice for each. Everything a compose-email needs to function is self-contained within the object itself.
+                  Compose-email objects extend this with additional fields: three recipient options, three attachment options, and integer values identifying the correct choice for each. Everything a compose-email needs to function is self-contained within the object itself.
                 </p>
               </div>
               <div className="shrink-0 w-64">
@@ -450,12 +450,12 @@ export default function CybersecurityProject() {
                 <p className="text-xs text-muted-foreground text-center mt-1"><code>email</code> object in C# called to game UI</p>
               </div>
               <div className="flex-1">
-                <img src="/parts of updateInbox in CSharp.jpg" alt="Parts of the updateInbox method in emailManager" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <img src="/parts of updateInbox in CSharp.jpg" alt="Parts of the updateInbox method in emailManager" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Parts of the <code>updateInbox</code> method in emailManager</p>
               </div>
             </div>
             <p className="text-muted-foreground mt-6 mb-4">
-              When the player selects an email, <code>currentEmail</code> is updated to track which slot is active. This is a 1-indexed value while <code>emailQueue</code> is 0-indexed, so <code>removeEmail()</code> compensates by using <code>currentEmail - 1</code> when calling <code>RemoveAt()</code>. Getting this offset wrong would consistently remove the wrong email from the queue, so maintaining that synchronisation across every interaction — clicking an email, answering it, closing the computer mid-level — was the central challenge of this system.
+              When the player selects an email, <code>currentEmail</code> is updated to track which slot is active. This is a 1-indexed value while <code>emailQueue</code> is 0-indexed, so <code>removeEmail()</code> compensates by using <code>currentEmail - 1</code> when calling <code>RemoveAt()</code>. Getting this offset wrong would consistently remove the wrong email from the queue, so maintaining that synchronisation across every interaction (clicking an email, answering it, closing the computer mid-level) was the central challenge of this system.
             </p>
             <p className="text-muted-foreground mb-6">
               When the player responds to an email, the result value for the chosen option is passed to the <code>scoreManager</code>, which handles point allocation. Emails flagged as minigames open a secondary screen upon a correct reply. Compose-email types require the player to select the correct recipient and attachment before sending, with each field evaluated independently by the <code>scoreManager</code>.
@@ -472,16 +472,16 @@ export default function CybersecurityProject() {
             </p>
             <div className="flex gap-6 items-center mt-4 mb-6">
               <div className="flex-1">
-                <img src="/npcmovementdraft.png" alt="Movement pattern for NPCs in the office" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <img src="/npcmovementdraft.png" alt="Movement pattern for NPCs in the office" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Movement pattern for NPCs in the office</p>
               </div>
               <div className="flex-1">
-                <img src="/nodefunctionality.png" alt="switchDirection method on each node in the grid" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <img src="/nodefunctionality.png" alt="switchDirection method on each node in the grid" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1"><code>switchDirection</code> method on each node in the grid</p>
               </div>
             </div>
             <p className="text-muted-foreground mb-4">
-              The security mechanic is handled by a trigger zone around the player&apos;s cubicle, managed by the <code>playerOfficeCheck</code> script. This zone tracks two things independently: whether the player is inside it, and whether any NPCs are inside it. If an NPC enters the zone while the player is absent and the computer is still logged in, <code>Random.Range(0, 2)</code> is called — a result of 1 triggers <code>vulnerablePC()</code> on the <code>scoreManager</code>, deducting points. The 50% chance reflects the unpredictable nature of insider threats rather than making the penalty feel automatic or unfair.
+              The security mechanic is handled by a trigger zone around the player&apos;s cubicle, managed by the <code>playerOfficeCheck</code> script. This zone tracks two things independently: whether the player is inside it, and whether any NPCs are inside it. If an NPC enters the zone while the player is absent and the computer is still logged in, <code>Random.Range(0, 2)</code> is called; a result of 1 triggers <code>vulnerablePC()</code> on the <code>scoreManager</code>, deducting points. The 50% chance reflects the unpredictable nature of insider threats rather than making the penalty feel automatic or unfair.
             </p>
             <img src="/officeCheckerScript.png" alt="TriggerEnter and TriggerExit scripts for the playerOfficeCheck script" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
             <p className="text-xs text-muted-foreground text-center mb-6">TriggerEnter and TriggerExit scripts for the <code>playerOfficeCheck</code> script</p>
@@ -503,23 +503,23 @@ export default function CybersecurityProject() {
             </p>
             <p className="text-muted-foreground mb-2">The passcode is evaluated against four criteria by the <code>passwordMinigame</code> class:</p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
-              <li><strong>Length</strong> — the passcode must be longer than three symbols</li>
-              <li><strong>Colour diversity</strong> — symbols are grouped by colour (Red: 1,2,3 / Blue: 4,5,6 / Green: 7,8,9) and more than one colour group must be present</li>
-              <li><strong>Shape diversity</strong> — symbols are grouped by shape (Circle: 1,4,7 / Diamond: 2,5,8 / Heart: 3,6,9) and more than one shape group must be present</li>
-              <li><strong>Simple sequence check</strong> — the <code>isSimpleSequence</code> method iterates through the list and returns true if every value increments by exactly 1, flagging predictable patterns as weak</li>
+              <li><strong>Length:</strong> the passcode must be longer than three symbols</li>
+              <li><strong>Colour diversity:</strong> symbols are grouped by colour (Red: 1,2,3 / Blue: 4,5,6 / Green: 7,8,9) and more than one colour group must be present</li>
+              <li><strong>Shape diversity:</strong> symbols are grouped by shape (Circle: 1,4,7 / Diamond: 2,5,8 / Heart: 3,6,9) and more than one shape group must be present</li>
+              <li><strong>Simple sequence check:</strong> the <code>isSimpleSequence</code> method iterates through the list and returns true if every value increments by exactly 1, flagging predictable patterns as weak</li>
             </ul>
             <div className="flex gap-6 items-center mt-4 mb-6">
               <div className="flex-1">
-                <img src="/For loop for colourCount.png" alt="For loop for the colourCount method in passwordMinigame" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <img src="/For loop for colourCount.png" alt="For loop for the colourCount method in passwordMinigame" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">For loop for the <code>colourCount</code> method in <code>passwordMinigame</code></p>
               </div>
               <div className="flex-1">
-                <img src="/isSimpleSequence.png" alt="isSimpleSequence method in passwordMinigame" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <img src="/isSimpleSequence.png" alt="isSimpleSequence method in passwordMinigame" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1"><code>isSimpleSequence</code> method in <code>passwordMinigame</code></p>
               </div>
             </div>
             <p className="text-muted-foreground mb-6">
-              Each criterion that fails is reported to the <code>scoreManager</code> independently, meaning a passcode can lose points for being short, lacking diversity, and being a simple sequence all at once. This was a deliberate design decision — it reinforces that password strength is not a single property but a combination of several habits applied together.
+              Each criterion that fails is reported to the <code>scoreManager</code> independently, meaning a passcode can lose points for being short, lacking diversity, and being a simple sequence all at once. This was a deliberate design decision, as it reinforces that password strength is not a single property but a combination of several habits applied together.
             </p>
 
             <h3 className="text-xl font-semibold mt-10 mb-6">Game &amp; Level Management</h3>
@@ -535,7 +535,7 @@ export default function CybersecurityProject() {
                   <li>The <code>connectionStatus</code> script starts the Wi-Fi degradation cycle</li>
                 </ul>
                 <p className="text-muted-foreground">
-                  When the <code>emailQueue</code> reaches zero, the <code>emailManager</code> signals the <code>gameManager</code> to call the win sequence. The <code>gameManager</code> also monitors the <code>scoreManager</code> continuously — if the player accumulates too many high-severity mistakes, the loss sequence is triggered before the timer expires.
+                  When the <code>emailQueue</code> reaches zero, the <code>emailManager</code> signals the <code>gameManager</code> to call the win sequence. The <code>gameManager</code> also monitors the <code>scoreManager</code> continuously. If the player accumulates too many high-severity mistakes, the loss sequence is triggered before the timer expires.
                 </p>
               </div>
               <div className="shrink-0 w-96">
@@ -544,20 +544,20 @@ export default function CybersecurityProject() {
               </div>
             </div>
             <p className="text-muted-foreground mb-4">
-              The <code>countdownTimer</code> script holds a <code>timeLeft</code> float that decrements every frame while <code>timerOn</code> is true. When <code>timeLeft</code> reaches zero, it calls <code>endGameLoss()</code> on the <code>gameManager</code> directly. During development, a unit test revealed that this call was missing — the timer was reaching zero and stopping without triggering the loss sequence. This was identified and resolved promptly.
+              The <code>countdownTimer</code> script holds a <code>timeLeft</code> float that decrements every frame while <code>timerOn</code> is true. When <code>timeLeft</code> reaches zero, it calls <code>endGameLoss()</code> on the <code>gameManager</code> directly. During development, a unit test revealed that this call was missing; the timer was reaching zero and stopping without triggering the loss sequence. This was identified and resolved promptly.
             </p>
             <img src="placeholder" alt="Timer countdown functionality from the timer script" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20 opacity-40" />
             <p className="text-xs text-muted-foreground text-center mb-6">Timer countdown functionality from the timer script</p>
             <p className="text-muted-foreground mb-4">
-              The Wi-Fi system runs on a separate <code>connectionStatus</code> script that manages a <code>connectVal</code> integer ranging from 5 to 0. At set intervals, <code>wifiShift()</code> is called, which uses <code>Random.Range(0, 100)</code> and a switch statement on the current <code>connectVal</code> to determine whether the connection goes up, stays the same, or goes down. The probability of degradation increases as <code>connectVal</code> decreases — at a value of 5 the connection always drops by one, while at higher values there is a chance it holds or recovers. At zero, the player is moved onto an unsecured network and the <code>scoreManager</code> begins applying a continuous point deduction until the connection is restored.
+              The Wi-Fi system runs on a separate <code>connectionStatus</code> script that manages a <code>connectVal</code> integer ranging from 5 to 0. At set intervals, <code>wifiShift()</code> is called, which uses <code>Random.Range(0, 100)</code> and a switch statement on the current <code>connectVal</code> to determine whether the connection goes up, stays the same, or goes down. The probability of degradation increases as <code>connectVal</code> decreases: at a value of 5 the connection always drops by one, while at higher values there is a chance it holds or recovers. At zero, the player is moved onto an unsecured network and the <code>scoreManager</code> begins applying a continuous point deduction until the connection is restored.
             </p>
-            <div className="flex gap-6 items-start mt-4 mb-6">
+            <div className="flex gap-6 items-center mt-4 mb-6">
               <div className="flex-1">
-                <img src="placeholder" alt="Part of the wifiShift method in the systemStatus class" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20 opacity-40" />
+                <img src="/wifishift in systemStatus.png" alt="Part of the wifiShift method in the systemStatus class" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Part of the <code>wifiShift</code> method in the <code>systemStatus</code> class</p>
               </div>
               <div className="flex-1">
-                <img src="/WiFi connections and their statuses.png" alt="Settings UI at connection values 3 to 0" className="w-full object-contain rounded-lg" />
+                <img src="/WiFi connections and their statuses.png" alt="Settings UI at connection values 3 to 0" className="w-[90%] mx-auto block object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Settings UI at connection values 3 to 0</p>
               </div>
             </div>
@@ -567,57 +567,174 @@ export default function CybersecurityProject() {
           </div>
 
           <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
-            <h3 className="text-xl font-semibold mb-4">Key Features</h3>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
-              <li>Interactive scenario-based learning</li>
-              <li>AI controlled characters for dynamic gameplay</li>
-              <li>Progress tracking and assessment system</li>
-              <li>Gamification of real-world cybersecurity concepts</li>
-              <li>Engaging storyline and character progression</li>
-              <li>Immediate feedback and learning reinforcement</li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mb-4">Research Findings</h3>
+            <h2 className="text-2xl font-semibold mb-6">Results &amp; Evaluation</h2>
+
+            <h3 className="text-xl font-semibold mb-6">Pre-Game Findings</h3>
             <p className="text-muted-foreground mb-6">
-              The project demonstrated significant improvements in participants' cybersecurity awareness:
+              Before playing, participants completed a survey measuring their existing cybersecurity knowledge, habits, and attitudes. Key findings:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-              <li>34% increase in overall knowledge</li>
-              <li>76% improvement in threat recognition</li>
-              <li>8/10 overall user engagement rating</li>
-              <li>83% of players expressed potential monetary commitment to further development of game</li>
+
+            <div className="flex gap-8 items-center mb-8">
+              <div className="flex-1">
+                <h4 className="text-lg font-semibold mb-4">Knowledge &amp; Confidence</h4>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Participants rated their overall cybersecurity knowledge as moderate on average, somewhere between complete beginners and confident experts</li>
+                  <li>Threat recognition confidence was slightly higher than general knowledge, but most participants only rated themselves slightly above average</li>
+                  <li>Phishing was the most widely recognised threat, with malware and ransomware close behind, while network-based threats like Man-in-the-Middle and Wi-Fi eavesdropping were far less recognised</li>
+                  <li>Only around 50% of participants felt confident recognising social engineering attempts</li>
+                </ul>
+              </div>
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Threat recognition results Bar Chart.png"
+                  alt="Figure 46: Threat recognition results Bar Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Figure 46: Threat recognition results</p>
+              </div>
+            </div>
+
+            <h4 className="text-lg font-semibold mb-4">Habits</h4>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+              <li>Only 17% of participants updated software immediately when prompted; 50% waited for reminders and 33% left it until automatic updates kicked in</li>
+              <li>Only around 33% of participants used completely different passwords across all their accounts, with 17% admitting to using the same password everywhere</li>
             </ul>
-          </div>
-          
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900">
-            <h2 className="text-2xl font-semibold mb-6">Development Process</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Research Phase</h3>
-                <p className="text-muted-foreground">
-                  Conducted extensive research on the current state of cybersecurity in various businesses, and existing cybersecurity education methods. Analysed existing training programs, awareness campaigns and previously attempted solutions. Identified key areas for improvement and outlined aims and objectives.
-                </p>
+            <div className="flex gap-6 mt-4 mb-8 justify-center">
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Install updates question Pie Chart.png"
+                  alt="Figure 48: Install updates question Pie Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Figure 48: Install updates question</p>
               </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Design & Implementation</h3>
-                <p className="text-muted-foreground">
-                  Wrote a basic narrative for the game that would immerse players into the game before introducing training elements. After this, I designed game mechanics based on cyber threats; including Phishing, Spoofing, Social Engineering and more.
-                </p>
-                <p></p>
-                <p className="text-muted-foreground">
-                  Implemented game mechanics in Unity, using OOP principles in C# to create interactions between players, objects, AI controlled characters and other mechanics. Also added dialogue, a scoring system and different levels.
-                </p>
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Password habits Pie Chart.png"
+                  alt="Figure 49: Password habits Pie Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Figure 49: Password habits</p>
               </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Testing & Validation</h3>
-                <p className="text-muted-foreground">
-                  Conducted user testing with various demographic groups. Gathered feedback and iteratively improved the game mechanics and educational content. Upon completion, handpicked playtesters with varying levels of cybersecurity knowledge and experience. Asked players questions both before and after playing a quick demo build.
+            </div>
+
+            <div className="flex gap-8 items-center mb-8">
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Cybersecurity learning willingness Pie Chart.png"
+                  alt="Figure 50: Cybersecurity learning willingness Pie Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Cybersecurity learning willingness</p>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-semibold mb-4">Attitudes</h4>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Participants almost unanimously rated cybersecurity as highly important in their daily lives, with an average importance rating of 4.5 out of 5</li>
+                  <li>Despite this, 50% said they were outright unlikely to engage with cybersecurity learning material outside of mandatory settings</li>
+                  <li>Only 17% said they were very likely to do so voluntarily</li>
+                </ul>
+
+                <p className="text-muted-foreground mt-6">
+                  These results established a clear picture going in: participants understood that cybersecurity mattered, but their habits didn&apos;t reflect that, and their appetite for engaging with the topic on their own terms was low.
                 </p>
               </div>
             </div>
+
+            <h3 className="text-xl font-semibold mb-6">Post-Game Findings</h3>
+
+            <div className="flex gap-8 items-start mb-8">
+              <div className="flex-1">
+                <h4 className="text-lg font-semibold mb-4">Knowledge &amp; Threat Recognition</h4>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Overall self-rated cybersecurity knowledge increased by approximately 33% on average after playing</li>
+                  <li>The largest improvements came from participants who rated themselves lower before playing, while more experienced participants saw little to no change in their knowledge ratings</li>
+                  <li>Despite this split, every single participant felt more confident identifying at least one type of cyber threat after playing</li>
+                  <li>Social engineering saw the greatest improvement in recognition, with nearly every participant selecting it as a threat they could now better identify</li>
+                  <li>Understanding of who poses a cybersecurity threat saw the most significant improvement of any survey question. Recognition of employees, managers, and trusted individuals as potential threats improved dramatically compared to pre-game responses</li>
+                </ul>
+              </div>
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Threat Identification comparison Bar Chart.png"
+                  alt="Figure 54 — Threat Identification comparison Bar Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Figure 54: Threat identification comparison</p>
+              </div>
+            </div>
+
+            <div className="flex gap-8 items-center mb-8">
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Standout Aspect Bar Chart.png"
+                  alt="Figure 56 — Standout Aspect Bar Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Figure 56: Standout aspect ratings</p>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-semibold mb-4">Engagement</h4>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>The game received an average engagement rating of 7.67 out of 10</li>
+                  <li>Story and dialogue were consistently identified as the standout aspects of the experience</li>
+                  <li>Gameplay was a secondary but still notable factor in the high engagement scores</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex gap-8 items-center mb-10">
+              <div className="flex-1">
+                <h4 className="text-lg font-semibold mb-4">Learning Preference</h4>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>100% of participants said they preferred this method of learning over the method they had previously identified as their favourite, including reading, lectures, and videos</li>
+                  <li>Participants were evenly split between those who would return to a fuller version of the game for learning purposes and those who would return purely for entertainment</li>
+                  <li>83% indicated a willingness to pay to access an expanded version of the game</li>
+                </ul>
+              </div>
+              <div className="shrink-0 w-96">
+                <img
+                  src="/Learning Method Preference Pie Chart.png"
+                  alt="Figure 57 — Learning Method Preference Pie Chart"
+                  className="w-full object-contain rounded-lg"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-1">Figure 57: Learning method preference</p>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mb-6">Evaluation</h3>
+            <p className="text-muted-foreground mb-6">
+              The results highlighted a meaningful distinction between the game&apos;s ability to teach and its ability to train. For participants with less prior knowledge, the game functioned well as an educational tool, introducing concepts through story and reinforcing them through mechanics. For those with more experience, it offered less in terms of new information, but still improved their confidence in recognising specific threats through repeated, pressured exposure to them.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              The story proved to be the most impactful element overall. The improvement in participants&apos; understanding of who can pose a cybersecurity threat, including people within an organisation, was largely attributed to the narrative rather than any specific mechanic. This supported the core design hypothesis: that embedding cybersecurity concepts in an engaging story makes the information feel more relevant and worth retaining.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              The weakest area was the negative feedback loop. Losing points or failing a level does not meaningfully replicate the real consequences of a data breach, and participants reflected this in their responses. A more impactful penalty system, one that visibly affected gameplay in ways tied to the specific mistake made, would have strengthened the training aspect of the experience considerably.
+            </p>
+            <p className="text-muted-foreground">
+              Overall, the game demonstrated real potential as a complement to existing cybersecurity awareness methods, particularly for audiences who would not voluntarily engage with traditional training material. The unanimous preference for this learning method, even among participants who felt their knowledge hadn&apos;t improved, suggests that the engagement problem this project set out to solve was addressed, even if the depth of information delivered still has room to grow.
+            </p>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.4 }}
+            className="bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-6 border border-blue-100 dark:border-blue-900"
+          >
+            <h3 className="text-lg font-semibold mb-4">My Reflection</h3>
+            <p className="text-muted-foreground mb-4">
+              Going into this project, I underestimated how much work game development actually takes. My experience with both Unity and C# was limited at the start, and that learning curve had a real impact on how much I was able to deliver. As the deadline approached, a significant number of planned features had to be cut: randomised AI-generated emails, additional gameplay environments beyond the main office, a database for tracking player performance across sessions, and a more sophisticated penalty system where mistakes would affect gameplay directly rather than simply deducting points. These cuts were necessary, but they also represent the clearest picture of where the project could grow.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              In terms of the solution itself, I think the results were honest about both its strengths and its limitations. The game worked well as an awareness tool for those with less prior cybersecurity knowledge, and the story-driven approach to delivering information proved more effective than I initially anticipated. However, it fell short of matching the informative depth of formal training courses for those who had already been through them. In its current state I see it as a complement to existing methods rather than a replacement, filling a gap that campaigns and courses both struggle with: reaching people who wouldn&apos;t seek out the topic on their own terms.
+            </p>
+            <p className="text-muted-foreground">
+              There is a lot I would still like to do with this project. Generative AI producing dynamic, randomised emails for each playthrough would give the game genuine replay value and make the phishing detection mechanic considerably harder to game with familiarity. Expanding the gameplay to new environments (a café, a home setting) would introduce network and physical security concepts in a more varied and memorable way. And building out the penalty system so that mistakes have visible, gameplay-affecting consequences would bring the experience closer to the simulation standard that makes serious games genuinely effective as training tools. I had a lot of fun building this, and I have every intention of taking it further.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </div>
