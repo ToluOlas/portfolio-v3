@@ -1,14 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  ArrowRight, 
-  Github, 
+import {
+  ArrowRight,
+  Github,
   Linkedin,
   Gamepad2,
   Shield,
   Calculator,
-  Wallet
+  Wallet,
+  Workflow,
+  Sparkles
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -30,20 +32,20 @@ export default function Home() {
 
   const projects = [
     {
-      title: "2D Action Platformer",
-      description: "A basic platformer developed in Unity. Contains a basic storyline, three platformer levels of increasing difficulty, and a boss battle. Players can unlock different moves on each level, with different AI-controlled enemies introduced as the game progresses.",
-      tech: ["C#", ".NET", "Unity"],
-      image: "https://i.ibb.co/1fPLTGYq/platformer-Img.png",
-      link: "/projects/platformer",
-      icon: <Gamepad2 className="w-6 h-6 text-blue-500" />
-    },
-    {
       title: "Cybersecurity Training and Awareness",
       description: "Designed and developed an educational RPG to improve cybersecurity awareness. Combined gamification and scenario-based learning to teach cybersecurity fundamentals, enhancing long-term knowledge retention.",
       tech: ["C#", ".NET", "Unity", "Excel"],
       image: "https://i.ibb.co/JjL0jrvJ/cybersecurity-Img.png",
       link: "/projects/cybersecurity",
       icon: <Shield className="w-6 h-6 text-blue-500" />
+    },
+    {
+      title: "2D Action Platformer",
+      description: "A basic platformer developed in Unity. Contains a basic storyline, three platformer levels of increasing difficulty, and a boss battle. Players can unlock different moves on each level, with different AI-controlled enemies introduced as the game progresses.",
+      tech: ["C#", ".NET", "Unity"],
+      image: "https://i.ibb.co/1fPLTGYq/platformer-Img.png",
+      link: "/projects/platformer",
+      icon: <Gamepad2 className="w-6 h-6 text-blue-500" />
     },
     {
       title: "Maths Revision Program",
@@ -138,12 +140,12 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                      alt="TypeScript"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                      alt="Spring Boot"
                       width={24}
                       height={24}
                     />
-                    TypeScript
+                    Spring Boot
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -156,12 +158,12 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                      alt="Spring Boot"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                      alt="TypeScript"
                       width={24}
                       height={24}
                     />
-                    Spring Boot
+                    TypeScript
                   </li>
                 </ul>
               </div>
@@ -170,12 +172,12 @@ export default function Home() {
                 <ul className="space-y-6 text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                      alt="Node.js"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                      alt="C#"
                       width={24}
                       height={24}
                     />
-                    Node.js / Express
+                    C# / .NET
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -188,12 +190,21 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                      alt="C#"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                      alt="MySQL"
                       width={24}
                       height={24}
                     />
-                    C# / .NET
+                    MySQL
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                      alt="Node.js"
+                      width={24}
+                      height={24}
+                    />
+                    Node.js / Express
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -202,16 +213,7 @@ export default function Home() {
                       width={24}
                       height={24}
                     />
-                    Python 
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                      alt="MySQL"
-                      width={24}
-                      height={24}
-                    />
-                    MySQL
+                    Python
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -222,6 +224,15 @@ export default function Home() {
                     />
                     RESTful APIs
                   </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                      alt="SQL"
+                      width={24}
+                      height={24}
+                    />
+                    SQL
+                  </li>
                 </ul>
               </div>
               <div className="p-6 rounded-lg bg-white/50 dark:bg-white/5 backdrop-blur-sm hover:shadow-lg transition-shadow border border-blue-100 dark:border-blue-900">
@@ -229,7 +240,7 @@ export default function Home() {
                 <ul className="space-y-6 text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
                       alt="AWS"
                       width={24}
                       height={24}
@@ -238,30 +249,38 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
-                      alt="Unity"
-                      width={24}
-                      height={24}
-                    />
-                    Unity
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
-                      alt="Power BI"
-                      width={24}
-                      height={24}
-                    />
-                    Power BI / Power Automate
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Image
                       src="https://i.ibb.co/4RcwhJsp/celonis-Icon.png"
-                      alt="Power BI"
+                      alt="Celonis"
                       width={24}
                       height={24}
                     />
                     Celonis EMS
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Sparkles className="w-6 h-6 shrink-0 text-muted-foreground" />
+                    Claude / Anthropic API
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                      alt="Docker"
+                      width={24}
+                      height={24}
+                    />
+                    Docker
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg"
+                      alt="Kubernetes"
+                      width={24}
+                      height={24}
+                    />
+                    Kubernetes
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Workflow className="w-6 h-6 shrink-0 text-muted-foreground" />
+                    Lean Agile
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -274,12 +293,21 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://www.tingletreegroup.com/wp-content/uploads/2016/12/agile-icon-3.png"
-                      alt="Agile"
+                      src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
+                      alt="Power BI"
                       width={24}
                       height={24}
                     />
-                    Lean Agile
+                    Power BI / Power Automate
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                      alt="Unity"
+                      width={24}
+                      height={24}
+                    />
+                    Unity
                   </li>
                 </ul>
               </div>
