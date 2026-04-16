@@ -352,9 +352,9 @@ export default function CybersecurityProject() {
             </div>
 
             {/* Wi-Fi System */}
-            <div className="flex gap-6 items-center mt-8">
+            <h4 className="text-lg font-semibold mt-8 mb-6">The Wi-Fi System: Man-in-the-Middle Attacks</h4>
+            <div className="flex gap-6 items-center">
               <div className="flex flex-col flex-1 gap-4">
-                <h4 className="text-lg font-semibold mb-3">The Wi-Fi System: Man-in-the-Middle Attacks</h4>
                 <p className="text-muted-foreground">
                   The Wi-Fi mechanic runs automatically in the background from the start of the level. The company network connection degrades gradually over time, moving between connection strength states. If the connection is poor enough, the player is automatically switched to an unsecured street network, at which point points begin to deplete for as long as the unsecured connection remains active.
                 </p>
