@@ -565,11 +565,15 @@ export default function CybersecurityProject() {
                 <p className="text-xs text-muted-foreground text-center mt-1">Gameplay Activity Diagram</p>
               </div>
             </div>
-            <p className="text-muted-foreground mb-4">
-              The <code>countdownTimer</code> script holds a <code>timeLeft</code> float that decrements every frame while <code>timerOn</code> is true. When <code>timeLeft</code> reaches zero, it calls <code>endGameLoss()</code> on the <code>gameManager</code> directly. During development, a unit test revealed that this call was missing; the timer was reaching zero and stopping without triggering the loss sequence. This was identified and resolved promptly.
-            </p>
-            <img src="placeholder" alt="Timer countdown functionality from the timer script" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20 opacity-40" />
-            <p className="text-xs text-muted-foreground text-center mb-6">Timer countdown functionality from the timer script</p>
+            <div className="flex gap-6 items-center mb-6">
+              <div className="shrink-0 w-56">
+                <img src="/timer function.png" alt="Timer countdown functionality from the timer script" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
+                <p className="text-xs text-muted-foreground text-center mt-1">Timer countdown functionality from the timer script</p>
+              </div>
+              <p className="text-muted-foreground flex-1">
+                The <code>countdownTimer</code> script holds a <code>timeLeft</code> float that decrements every frame while <code>timerOn</code> is true. When <code>timeLeft</code> reaches zero, it calls <code>endGameLoss()</code> on the <code>gameManager</code> directly. During development, a unit test revealed that this call was missing; the timer was reaching zero and stopping without triggering the loss sequence. This was identified and resolved promptly.
+              </p>
+            </div>
             <p className="text-muted-foreground mb-4">
               The Wi-Fi system runs on a separate <code>connectionStatus</code> script that manages a <code>connectVal</code> integer ranging from 5 to 0. At set intervals, <code>wifiShift()</code> is called, which uses <code>Random.Range(0, 100)</code> and a switch statement on the current <code>connectVal</code> to determine whether the connection goes up, stays the same, or goes down. The probability of degradation increases as <code>connectVal</code> decreases: at a value of 5 the connection always drops by one, while at higher values there is a chance it holds or recovers. At zero, the player is moved onto an unsecured network and the <code>scoreManager</code> begins applying a continuous point deduction until the connection is restored.
             </p>
