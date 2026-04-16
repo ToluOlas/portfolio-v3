@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function CybersecurityProject() {
@@ -23,12 +22,13 @@ export default function CybersecurityProject() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl font-bold mb-6">Workday for a Weekday - Cybersecurity Training and Awareness</h1>
-          <div className="relative h-[400px] w-full mb-8 rounded-lg overflow-hidden">
-            <Image
-              src="https://i.ibb.co/JjL0jrvJ/cybersecurity-Img.png"
-              alt="Cybersecurity Training RPG"
-              fill
-              className="object-cover"
+          <div className="relative w-4/5 mx-auto mb-8 rounded-lg overflow-hidden aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/Xh33VmkGBc8?start=65"
+              title="Workday for a Weekday - Gameplay Footage"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
             />
           </div>
           
@@ -54,7 +54,29 @@ export default function CybersecurityProject() {
             </div>
           </div>
           
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
+          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900 mb-8">
+            <h2 className="text-lg font-semibold mb-4">Contents</h2>
+            <div className="flex flex-col gap-2">
+              {[
+                { href: "#overview", label: "Project Overview", n: "01" },
+                { href: "#the-problem", label: "The Problem", n: "02" },
+                { href: "#design-decisions", label: "Design Decisions", n: "03" },
+                { href: "#the-implementation", label: "The Implementation", n: "04" },
+                { href: "#results", label: "Results & Evaluation", n: "05" },
+              ].map(({ href, label, n }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="flex items-center gap-4 w-full px-4 py-2 rounded-md border border-blue-100 dark:border-blue-900 bg-white/70 dark:bg-white/5 transition-transform duration-200 ease-out hover:translate-x-3 no-underline"
+                >
+                  <span className="text-xs text-blue-400 dark:text-blue-500 font-mono tabular-nums">{n}</span>
+                  <span className="text-sm font-medium text-foreground">{label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div id="overview" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
             <p className="text-muted-foreground mb-6">
               Most people know cybersecurity matters. Most people still get phished.
@@ -83,8 +105,8 @@ export default function CybersecurityProject() {
             </p>
           </div>
 
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
-            <h2 className="text-2xl font-semibold mb-6">So... why?</h2>
+          <div id="the-problem" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+            <h2 className="text-2xl font-semibold mb-6">The Problem</h2>
             <p className="text-muted-foreground mb-6">
               Cybersecurity is one of those topics everyone agrees matters... and almost nobody engages with voluntarily. The threat landscape is expanding constantly, with new users, new platforms, and new attack methods emerging every day. And yet, despite years of awareness campaigns and training programs, human error remains the leading cause of most data breaches, both personally and professionally.
             </p>
@@ -160,8 +182,8 @@ export default function CybersecurityProject() {
 
           </div>
 
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
-            <h2 className="text-2xl font-semibold mb-6">Design: Meet the Team</h2>
+          <div id="design-decisions" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+            <h2 className="text-2xl font-semibold mb-6">Design Decisions</h2>
 
             <div className="flex gap-8 items-center">
               <div className="w-1/6 shrink-0">
@@ -414,8 +436,8 @@ export default function CybersecurityProject() {
             </div>
           </div>
 
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
-            <h2 className="text-2xl font-semibold mb-6">Key Systems</h2>
+          <div id="the-implementation" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+            <h2 className="text-2xl font-semibold mb-6">The Implementation</h2>
             <p className="text-muted-foreground mb-8">
               The game was built in Unity 2D using C#, with maps designed in Tiled and imported directly into Unity. This section covers the implementation of the core systems, the technical decisions made during development, and some of the more interesting problems that came up along the way.
             </p>
@@ -566,7 +588,7 @@ export default function CybersecurityProject() {
             </p>
           </div>
 
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8">
+          <div id="results" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">Results &amp; Evaluation</h2>
 
             <h3 className="text-xl font-semibold mb-6">Pre-Game Findings</h3>
@@ -587,10 +609,10 @@ export default function CybersecurityProject() {
               <div className="shrink-0 w-96">
                 <img
                   src="/Threat recognition results Bar Chart.png"
-                  alt="Figure 46: Threat recognition results Bar Chart"
+                  alt="Threat recognition results Bar Chart"
                   className="w-full object-contain rounded-lg"
                 />
-                <p className="text-xs text-muted-foreground text-center mt-1">Figure 46: Threat recognition results</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Threat recognition results</p>
               </div>
             </div>
 
@@ -603,18 +625,18 @@ export default function CybersecurityProject() {
               <div className="shrink-0 w-96">
                 <img
                   src="/Install updates question Pie Chart.png"
-                  alt="Figure 48: Install updates question Pie Chart"
+                  alt="Install updates question Pie Chart"
                   className="w-full object-contain rounded-lg"
                 />
-                <p className="text-xs text-muted-foreground text-center mt-1">Figure 48: Install updates question</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Install updates question</p>
               </div>
               <div className="shrink-0 w-96">
                 <img
                   src="/Password habits Pie Chart.png"
-                  alt="Figure 49: Password habits Pie Chart"
+                  alt="Password habits Pie Chart"
                   className="w-full object-contain rounded-lg"
                 />
-                <p className="text-xs text-muted-foreground text-center mt-1">Figure 49: Password habits</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Password habits</p>
               </div>
             </div>
 
@@ -660,7 +682,7 @@ export default function CybersecurityProject() {
                   alt="Figure 54 — Threat Identification comparison Bar Chart"
                   className="w-full object-contain rounded-lg"
                 />
-                <p className="text-xs text-muted-foreground text-center mt-1">Figure 54: Threat identification comparison</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Threat identification comparison</p>
               </div>
             </div>
 
@@ -671,7 +693,7 @@ export default function CybersecurityProject() {
                   alt="Figure 56 — Standout Aspect Bar Chart"
                   className="w-full object-contain rounded-lg"
                 />
-                <p className="text-xs text-muted-foreground text-center mt-1">Figure 56: Standout aspect ratings</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Standout aspect ratings</p>
               </div>
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Engagement</h4>
@@ -698,7 +720,7 @@ export default function CybersecurityProject() {
                   alt="Figure 57 — Learning Method Preference Pie Chart"
                   className="w-full object-contain rounded-lg"
                 />
-                <p className="text-xs text-muted-foreground text-center mt-1">Figure 57: Learning method preference</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Learning method preference</p>
               </div>
             </div>
 
@@ -718,6 +740,7 @@ export default function CybersecurityProject() {
           </div>
 
           <motion.div
+            id="reflection"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
