@@ -24,7 +24,7 @@ export default function CybersecurityProject() {
           <h1 className="text-4xl font-bold mb-6">Workday for a Weekday - Cybersecurity Training and Awareness</h1>
           <div className="relative w-4/5 mx-auto mb-8 rounded-lg overflow-hidden aspect-video">
             <iframe
-              src="https://www.youtube.com/embed/Xh33VmkGBc8?start=65"
+              src="https://www.youtube.com/embed/Xh33VmkGBc8?start=25"
               title="Workday for a Weekday - Gameplay Footage"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
