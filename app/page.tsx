@@ -19,6 +19,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Typewriter } from "@/components/typewriter";
+import { SectionHeading } from "@/components/section-heading";
+import { Magnetic } from "@/components/magnetic";
+import { trackPointer } from "@/lib/spotlight";
 import { useRef } from "react";
 
 export default function Home() {
@@ -184,19 +187,23 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
-                <Button
-                  size="lg"
-                  className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
-                  onClick={scrollToProjects}
-                >
-                  View Projects
-                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Link href="https://drive.google.com/file/d/1Xu9DcS1d3Qhsoxp3ZMvUl54emuddq6Pu/view?pli=1" target="_blank" className="w-full sm:w-auto">
-                  <Button size="lg" variant="outline" className="w-full bg-white/40 dark:bg-transparent border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
-                    Download Resume
+                <Magnetic className="w-full sm:w-auto">
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
+                    onClick={scrollToProjects}
+                  >
+                    View Projects
+                    <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </Magnetic>
+                <Magnetic className="w-full sm:w-auto">
+                  <Link href="https://drive.google.com/file/d/1Xu9DcS1d3Qhsoxp3ZMvUl54emuddq6Pu/view?pli=1" target="_blank" className="block w-full sm:w-auto">
+                    <Button size="lg" variant="outline" className="w-full bg-white/40 dark:bg-transparent border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
+                      Download Resume
+                    </Button>
+                  </Link>
+                </Magnetic>
                 <div className="flex items-center justify-center gap-2 sm:ml-2">
                   <Link
                     href="https://github.com/ToluOlas"
@@ -251,19 +258,25 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-blue-950/50">
+      <section className="py-16 sm:py-24 bg-slate-100/70 dark:bg-white/[0.03] border-y border-border">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">Technical Expertise</h2>
+          <SectionHeading index="01" label="Expertise" title="Technical Expertise" />
+          {/* Rows slide in from the left one after another */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="max-w-5xl mx-auto rounded-2xl bg-white/50 dark:bg-white/5 backdrop-blur-sm border border-blue-100 dark:border-blue-900 divide-y divide-blue-100 dark:divide-blue-900"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
+            onMouseMove={trackPointer}
+            className="group/panel relative overflow-hidden rounded-2xl bg-white/70 dark:bg-white/5 backdrop-blur-sm border border-blue-100 dark:border-blue-900 divide-y divide-blue-100 dark:divide-blue-900"
           >
             {skillGroups.map((group) => (
-              <div
+              <motion.div
                 key={group.title}
+                variants={{
+                  hidden: { opacity: 0, x: -24 },
+                  show: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } },
+                }}
                 className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-3 md:gap-6 p-5 sm:p-6"
               >
                 <h3 className="text-lg font-semibold md:pt-1">{group.title}</h3>
@@ -288,30 +301,37 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             ))}
+            {/* Cursor-following glow */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 !border-0 opacity-0 transition-opacity duration-300 group-hover/panel:opacity-100"
+              style={{ background: "radial-gradient(360px circle at var(--x) var(--y), hsl(var(--highlight) / 0.12), transparent 60%)" }}
+            />
           </motion.div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section ref={projectsRef} className="py-16 sm:py-20">
+      <section ref={projectsRef} className="py-16 sm:py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">Featured Projects</h2>
+          <SectionHeading index="02" label="Work" title="Featured Projects" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[300px] md:auto-rows-[260px] gap-4 sm:gap-5">
             {projects.map((project, index) => {
               const featured = index === 0;
               return (
                 <motion.div
                   key={project.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  initial={{ opacity: 0, scale: 0.94 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.6, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
                   className={bentoLayout[index]}
                 >
                   <Link
                     href={project.link}
+                    onMouseMove={trackPointer}
                     className="group relative block h-full w-full overflow-hidden rounded-2xl border border-blue-100 dark:border-blue-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
                     <Image
@@ -322,6 +342,11 @@ export default function Home() {
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/0 transition-colors duration-500 lg:group-hover:via-black/60" />
+                    <div
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      style={{ background: "radial-gradient(420px circle at var(--x) var(--y), rgba(255,255,255,0.22), transparent 45%)" }}
+                    />
 
                     {featured && (
                       <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-medium bg-highlight text-highlight-foreground shadow">
@@ -363,30 +388,36 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-t from-blue-50/50 to-transparent dark:from-blue-950/50">
+      <section className="py-16 sm:py-24 bg-slate-100/70 dark:bg-white/[0.03] border-t border-border">
         <div className="container mx-auto px-4 text-center">
+          {/* Blur-in reveal */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">Let's Connect</h2>
+            <SectionHeading index="03" label="Contact" title="Let's Connect" align="center" className="!mb-6 sm:!mb-8" />
             <p className="text-lg sm:text-xl text-muted-foreground mb-8">
               I'm always open to new opportunities and interesting projects.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-              <Link href="https://github.com/ToluOlas" target="_blank" className="w-full sm:w-auto">
-                <Button variant="outline" size="lg" className="w-full border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
-                  <Github className="mr-2" />
-                  GitHub
-                </Button>
-              </Link>
-              <Link href="https://www.linkedin.com/in/tolu-olasupo-7a6037223/" target="_blank" className="w-full sm:w-auto">
-                <Button variant="outline" size="lg" className="w-full border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
-                  <Linkedin className="mr-2" />
-                  LinkedIn
-                </Button>
-              </Link>
+              <Magnetic className="w-full sm:w-auto">
+                <Link href="https://github.com/ToluOlas" target="_blank" className="block w-full sm:w-auto">
+                  <Button variant="outline" size="lg" className="w-full bg-background/60 border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
+                    <Github className="mr-2" />
+                    GitHub
+                  </Button>
+                </Link>
+              </Magnetic>
+              <Magnetic className="w-full sm:w-auto">
+                <Link href="https://www.linkedin.com/in/tolu-olasupo-7a6037223/" target="_blank" className="block w-full sm:w-auto">
+                  <Button variant="outline" size="lg" className="w-full bg-background/60 border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
+                    <Linkedin className="mr-2" />
+                    LinkedIn
+                  </Button>
+                </Link>
+              </Magnetic>
             </div>
           </motion.div>
         </div>
