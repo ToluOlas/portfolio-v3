@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import { Navbar } from '@/components/navbar';
+import { Footer } from '@/components/footer';
 import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -38,6 +39,7 @@ export default function RootLayout({
           <main className="pt-16">
             {children}
           </main>
+          <Footer />
         </Providers>
       </body>
     </html>
