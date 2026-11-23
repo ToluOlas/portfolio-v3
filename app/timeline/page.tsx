@@ -152,7 +152,7 @@ export default function Timeline() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+          <h1 className="text-5xl font-bold mb-8 text-center text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">
             Career Timeline
           </h1>
           <p className="text-xl text-muted-foreground mb-16 text-center">

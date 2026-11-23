@@ -168,13 +168,13 @@ export default function Home() {
               </div>
 
               <p className="text-lg font-medium text-muted-foreground mb-2">Hi, I&apos;m</p>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
-                Tolu Olasupo
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 text-foreground">
+                Tolu Olasupo<span className="text-highlight">.</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
                 Software engineer who builds
                 <Typewriter
-                  className="block text-blue-600 dark:text-blue-400"
+                  className="block text-highlight"
                   words={["full-stack web apps", "machine learning models", "games in Unity", "cloud solutions"]}
                 />
               </h2>
@@ -253,7 +253,7 @@ export default function Home() {
       {/* Skills Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-blue-950/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">Technical Expertise</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">Technical Expertise</h2>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -271,7 +271,7 @@ export default function Home() {
                   {group.skills.map((skill) => (
                     <li
                       key={skill.name}
-                      className="flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full text-sm bg-background/70 border border-blue-100 dark:border-blue-900/70 text-foreground/80 hover:border-blue-400 hover:text-foreground hover:-translate-y-0.5 transition-all"
+                      className="flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full text-sm bg-background/70 border border-blue-100 dark:border-blue-900/70 text-foreground/80 hover:border-highlight hover:text-foreground hover:-translate-y-0.5 transition-all"
                     >
                       {skill.src ? (
                         <Image
@@ -297,7 +297,7 @@ export default function Home() {
       {/* Projects Section */}
       <section ref={projectsRef} className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">Featured Projects</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[300px] md:auto-rows-[260px] gap-4 sm:gap-5">
             {projects.map((project, index) => {
               const featured = index === 0;
@@ -324,7 +324,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/0 transition-colors duration-500 lg:group-hover:via-black/60" />
 
                     {featured && (
-                      <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-medium bg-blue-500 text-white shadow">
+                      <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-medium bg-highlight text-highlight-foreground shadow">
                         Featured
                       </span>
                     )}
@@ -370,7 +370,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">Let's Connect</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-foreground after:block after:mx-auto after:mt-4 after:h-1 after:w-12 after:rounded-full after:bg-highlight after:content-['']">Let's Connect</h2>
             <p className="text-lg sm:text-xl text-muted-foreground mb-8">
               I'm always open to new opportunities and interesting projects.
             </p>

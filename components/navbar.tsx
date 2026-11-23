@@ -19,8 +19,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Name */}
           <Link href="/" className="text-xl font-bold">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
-              Tolu Olasupo
+            <span className="font-display tracking-tight text-foreground">
+              Tolu Olasupo<span className="text-highlight">.</span>
             </span>
           </Link>
 
