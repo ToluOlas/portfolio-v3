@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Menu, X, Bot } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './theme-toggle';
 
@@ -18,8 +18,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Name */}
-          <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-            <Bot className="w-6 h-6 text-blue-500" />
+          <Link href="/" className="text-xl font-bold">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
               Tolu Olasupo
             </span>
