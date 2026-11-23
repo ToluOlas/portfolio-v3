@@ -18,6 +18,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Typewriter } from "@/components/typewriter";
 import { useRef } from "react";
 
 export default function Home() {
@@ -132,50 +133,120 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden px-4 py-12 md:py-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-blue-400/20 to-background/80 dark:from-blue-600/20 dark:via-blue-400/10 dark:to-background/60" />
-        <div className="container mx-auto z-10">
-          <motion.div
-            initial="initial"
-            animate="animate"
-            variants={fadeIn}
-            className="max-w-3xl mx-auto"
-          >
-            <div className="mb-8 relative w-24 h-24 sm:w-32 sm:h-32 mx-auto">
-              <Image
-                src="https://i.ibb.co/d0nZ6ydQ/profile-Img.png"
-                alt="Tolu Olasupo"
-                fill
-                className="rounded-full object-cover border-4 border-blue-500/20"
-                priority
-              />
-            </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 text-center">
-              Tolu Olasupo
-            </h1>
-            <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-6 sm:mb-8 text-center">
-              Software Engineer & Full-Stack Developer 
-            </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 text-center px-4">
-              Building innovative solutions with modern technologies. 
-              Specialised in full-stack development, machine learning, with exposure to cloud engineering and data analytics.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
-                onClick={scrollToProjects}
-              >
-                View Projects
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Link href="https://drive.google.com/file/d/1Xu9DcS1d3Qhsoxp3ZMvUl54emuddq6Pu/view?pli=1" target="_blank" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
-                  Download Resume
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden px-4 py-16 lg:py-0">
+        {/* Background: soft colour blobs + dot grid that fades out toward the edges */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-blue-500/25 blur-3xl dark:bg-blue-600/20" />
+          <div className="absolute top-1/3 -right-24 h-[24rem] w-[24rem] rounded-full bg-cyan-400/20 blur-3xl dark:bg-cyan-500/10" />
+          <div className="absolute -bottom-40 left-1/3 h-[22rem] w-[22rem] rounded-full bg-violet-400/15 blur-3xl dark:bg-violet-600/10" />
+          <div
+            className="absolute inset-0 text-slate-900/[0.12] dark:text-white/[0.08]"
+            style={{
+              backgroundImage: "radial-gradient(currentColor 1px, transparent 1px)",
+              backgroundSize: "22px 22px",
+              maskImage: "radial-gradient(ellipse 70% 60% at 50% 45%, black 30%, transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse 70% 60% at 50% 45%, black 30%, transparent 100%)",
+            }}
+          />
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          <div className="grid lg:grid-cols-[1.25fr_1fr] gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+            {/* Text column */}
+            <motion.div
+              initial="initial"
+              animate="animate"
+              variants={fadeIn}
+              className="order-2 lg:order-1"
+            >
+              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/70 dark:border-blue-800/70 bg-white/60 dark:bg-white/5 backdrop-blur-sm px-3 py-1 text-sm text-muted-foreground mb-6">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping motion-reduce:animate-none" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                </span>
+                Open to new opportunities
+              </div>
+
+              <p className="text-lg font-medium text-muted-foreground mb-2">Hi, I&apos;m</p>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+                Tolu Olasupo
+              </h1>
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
+                Software engineer who builds
+                <Typewriter
+                  className="block text-blue-600 dark:text-blue-400"
+                  words={["full-stack web apps", "machine learning models", "games in Unity", "cloud solutions"]}
+                />
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-xl">
+                Building innovative solutions with modern technologies.
+                Specialised in full-stack development, machine learning, with exposure to cloud engineering and data analytics.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
+                  onClick={scrollToProjects}
+                >
+                  View Projects
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </Link>
-            </div>
-          </motion.div>
+                <Link href="https://drive.google.com/file/d/1Xu9DcS1d3Qhsoxp3ZMvUl54emuddq6Pu/view?pli=1" target="_blank" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="w-full bg-white/40 dark:bg-transparent border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
+                    Download Resume
+                  </Button>
+                </Link>
+                <div className="flex items-center justify-center gap-2 sm:ml-2">
+                  <Link
+                    href="https://github.com/ToluOlas"
+                    target="_blank"
+                    aria-label="GitHub"
+                    className="p-2.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-blue-100/60 dark:hover:bg-blue-900/40 transition-colors"
+                  >
+                    <Github className="w-5 h-5" />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/tolu-olasupo-7a6037223/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    className="p-2.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-blue-100/60 dark:hover:bg-blue-900/40 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Photo column */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.92 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            >
+              <div className="relative w-40 h-40 sm:w-56 sm:h-56 lg:w-80 lg:h-80">
+                <div aria-hidden="true" className="absolute -inset-6 rounded-full bg-gradient-to-tr from-blue-500/30 to-cyan-400/30 blur-2xl" />
+                <div
+                  aria-hidden="true"
+                  className="absolute -inset-1.5 rounded-full bg-[conic-gradient(from_0deg,#2563eb,#22d3ee,#a78bfa,#2563eb)] animate-spin motion-reduce:animate-none"
+                  style={{ animationDuration: "8s" }}
+                />
+                <div className="absolute inset-0 rounded-full bg-background p-1.5">
+                  <div className="relative h-full w-full overflow-hidden rounded-full">
+                    <Image
+                      src="https://i.ibb.co/d0nZ6ydQ/profile-Img.png"
+                      alt="Tolu Olasupo"
+                      fill
+                      sizes="(min-width: 1024px) 320px, 224px"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
