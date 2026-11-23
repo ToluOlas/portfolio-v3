@@ -10,7 +10,8 @@ import {
   Calculator,
   Wallet,
   Workflow,
-  Sparkles
+  Sparkles,
+  Webhook
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -216,12 +217,7 @@ export default function Home() {
                     Python
                   </li>
                   <li className="flex items-center gap-3">
-                    <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
-                      alt="GraphQL"
-                      width={24}
-                      height={24}
-                    />
+                    <Webhook className="w-6 h-6 text-blue-500" aria-hidden="true" />
                     RESTful APIs
                   </li>
                   <li className="flex items-center gap-3">

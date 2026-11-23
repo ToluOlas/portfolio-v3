@@ -31,15 +31,23 @@ interface TimelineItem {
 export default function Timeline() {
   const timelineData: TimelineItem[] = [
     {
-      period: "2024-Present",
-      title: "Present Day",
-      description: "Currently searching for the next opportunity while continuing personal projects and skill development.",
+      period: "Oct 2026-Present",
+      title: "AI Engineer at MyPocketSkill",
+      description: "Working as an AI Engineer at MyPocketSkill.",
+      highlights: [],
+      skills: [],
+      icon: <Bot className="w-6 h-6" />
+    },
+    {
+      period: "2024-2026",
+      title: "Personal Projects & Upskilling",
+      description: "Focused on personal projects and skill development after graduating.",
       highlights: [
-        "Continuing development of 2D Platformer game in Unity",
-        "Taking online courses for several technologies, including Microsoft Azure and web technologies",
-        "Working on this website!"
+        "Completed a 2D Platformer game in Unity",
+        "Took online courses for several technologies, including Microsoft Azure and web technologies",
+        "Built this website!"
       ],
-      skills: ["HTML/CSS/Javascript", "C#", "Unity", "Azure", "Language Learning Models"],
+      skills: ["HTML/CSS/Javascript", "C#", "Unity", "Azure", "Large Language Models"],
       icon: <Code className="w-6 h-6" />
     },
     {
@@ -51,7 +59,7 @@ export default function Timeline() {
         "Completed an 82 page dissertation project on cybersecurity, developing an educational game (Grade: A)",
         "Graduated with First Class Honours in Computer Science(Digital Media and Games)"
       ],
-      skills: ["C#", "Unity", ".Net", "R/RStudio", "Blockchain", "Deep Learning", "Game Design", "Language Learning Models", "Software Engineering"],
+      skills: ["C#", "Unity", ".Net", "R/RStudio", "Blockchain", "Deep Learning", "Game Design", "Large Language Models", "Software Engineering"],
       icon: <GraduationCap className="w-6 h-6" />
     },
     {
