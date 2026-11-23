@@ -11,7 +11,7 @@ import {
   Calculator,
   Wallet,
   Workflow,
-  Sparkles,
+  Anvil,
   Webhook,
   type LucideIcon
 } from "lucide-react";
@@ -74,14 +74,16 @@ export default function Home() {
     {
       title: "Cloud, Data & Tools",
       skills: [
-        { name: "AWS / Azure", src: devicon("azure/azure-original.svg") },
+        { name: "AWS", src: "https://unpkg.com/devicon@2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", invertDark: true },
+        { name: "Azure", src: devicon("azure/azure-original.svg") },
+        { name: "Microsoft Foundry", Icon: Anvil },
         { name: "Google Cloud (GCP)", src: devicon("googlecloud/googlecloud-original.svg") },
         { name: "Docker", src: devicon("docker/docker-original.svg") },
         { name: "Kubernetes", src: devicon("kubernetes/kubernetes-plain.svg") },
         { name: "Machine Learning", src: devicon("tensorflow/tensorflow-original.svg") },
-        { name: "Claude / Anthropic API", Icon: Sparkles },
         { name: "Claude Code", src: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" },
-        { name: "Power BI / Power Automate", src: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+        { name: "Power BI", src: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+        { name: "Power Automate", src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Microsoft_Power_Automate.svg" },
         { name: "Celonis EMS", src: "https://i.ibb.co/4RcwhJsp/celonis-Icon.png" },
         { name: "Unity", src: devicon("unity/unity-original.svg"), invertDark: true },
         { name: "Lean Agile", Icon: Workflow },
@@ -292,7 +294,7 @@ export default function Home() {
                           alt=""
                           width={18}
                           height={18}
-                          className={skill.invertDark ? "dark:invert" : undefined}
+                          className={skill.invertDark ? "dark:brightness-0 dark:invert" : undefined}
                         />
                       ) : skill.Icon ? (
                         <skill.Icon className="w-[18px] h-[18px] text-blue-500" aria-hidden="true" />
@@ -307,7 +309,7 @@ export default function Home() {
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 !border-0 opacity-0 transition-opacity duration-300 group-hover/panel:opacity-100"
-              style={{ background: "radial-gradient(360px circle at var(--x) var(--y), hsl(var(--highlight) / 0.12), transparent 60%)" }}
+              style={{ background: "radial-gradient(320px circle at var(--x) var(--y), hsl(var(--highlight) / 0.07), transparent 60%)" }}
             />
           </motion.div>
         </div>
@@ -345,7 +347,7 @@ export default function Home() {
                     <div
                       aria-hidden="true"
                       className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                      style={{ background: "radial-gradient(420px circle at var(--x) var(--y), rgba(255,255,255,0.22), transparent 45%)" }}
+                      style={{ background: "radial-gradient(360px circle at var(--x) var(--y), rgba(255,255,255,0.1), transparent 45%)" }}
                     />
 
                     {featured && (

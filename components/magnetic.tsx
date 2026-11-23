@@ -12,11 +12,11 @@ type MagneticProps = {
 };
 
 /** Pulls its child slightly toward the cursor while hovered, then springs back. */
-export function Magnetic({ children, strength = 0.25, className }: MagneticProps) {
+export function Magnetic({ children, strength = 0.12, className }: MagneticProps) {
   const ref = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
-  const x = useSpring(useMotionValue(0), { stiffness: 250, damping: 18, mass: 0.4 });
-  const y = useSpring(useMotionValue(0), { stiffness: 250, damping: 18, mass: 0.4 });
+  const x = useSpring(useMotionValue(0), { stiffness: 300, damping: 24, mass: 0.4 });
+  const y = useSpring(useMotionValue(0), { stiffness: 300, damping: 24, mass: 0.4 });
 
   const onMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (reduceMotion || !ref.current) return;
