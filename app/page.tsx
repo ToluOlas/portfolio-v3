@@ -390,36 +390,53 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 sm:py-24 bg-slate-100/70 dark:bg-white/[0.03] border-t border-border">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative overflow-hidden py-20 sm:py-32 bg-slate-100/70 dark:bg-white/[0.03] border-t border-border">
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-40 left-1/2 h-[26rem] w-[40rem] -translate-x-1/2 rounded-full bg-blue-500/15 blur-3xl dark:bg-blue-600/10" />
+        <div className="container relative mx-auto px-4 text-center">
           {/* Blur-in reveal */}
           <motion.div
             initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
+            className="mx-auto max-w-3xl"
           >
-            <SectionHeading index="03" label="Contact" title="Let's Connect" align="center" className="!mb-6 sm:!mb-8" />
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8">
-              I'm always open to new opportunities and interesting projects.
+            <p className="mb-4 flex items-center justify-center gap-3 font-mono text-xs sm:text-sm uppercase tracking-[0.2em]">
+              <span className="text-highlight">03</span>
+              <span aria-hidden="true" className="h-px w-8 bg-highlight/60" />
+              <span className="text-muted-foreground">Contact</span>
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-              <Magnetic className="w-full sm:w-auto">
-                <Link href="https://github.com/ToluOlas" target="_blank" className="block w-full sm:w-auto">
-                  <Button variant="outline" size="lg" className="w-full bg-background/60 border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
-                    <Github className="mr-2" />
-                    GitHub
-                  </Button>
-                </Link>
-              </Magnetic>
-              <Magnetic className="w-full sm:w-auto">
-                <Link href="https://www.linkedin.com/in/tolu-olasupo-7a6037223/" target="_blank" className="block w-full sm:w-auto">
-                  <Button variant="outline" size="lg" className="w-full bg-background/60 border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
-                    <Linkedin className="mr-2" />
-                    LinkedIn
-                  </Button>
-                </Link>
-              </Magnetic>
+            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-foreground">
+              Let&apos;s build something together<span className="text-highlight">.</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-lg sm:text-xl text-muted-foreground">
+              I&apos;m always open to new opportunities and interesting projects. The quickest way to reach me is on LinkedIn.
+            </p>
+
+            <Magnetic className="mt-10">
+              <Link
+                href="https://www.linkedin.com/in/tolu-olasupo-7a6037223/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-7 py-4 text-lg sm:text-xl font-semibold text-white shadow-lg shadow-blue-500/25 transition-shadow hover:shadow-xl hover:shadow-blue-500/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              >
+                <Linkedin className="h-6 w-6" aria-hidden="true" />
+                Message me on LinkedIn
+                <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+              </Link>
+            </Magnetic>
+
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-muted-foreground">
+              <span>or find me on</span>
+              <Link
+                href="https://github.com/ToluOlas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-medium text-foreground underline decoration-highlight/50 decoration-2 underline-offset-4 transition-colors hover:decoration-highlight"
+              >
+                <Github className="h-4 w-4" aria-hidden="true" />
+                GitHub
+              </Link>
             </div>
           </motion.div>
         </div>
