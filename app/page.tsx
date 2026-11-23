@@ -184,10 +184,20 @@ export default function Home() {
                 Tolu Olasupo<span className="text-highlight">.</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
-                Software engineer who builds
+                A software engineer who builds
                 <Typewriter
                   className="block text-highlight"
-                  words={["full-stack web apps", "machine learning models", "games in Unity", "cloud solutions"]}
+                  phrases={[
+                    "full-stack web apps",
+                    "agentic workflows",
+                    "machine learning models",
+                    "games in Unity",
+                    "cloud solutions",
+                    // Comedic false starts: "bugs" and "errors" are typed then hastily deleted
+                    { base: "features with... ", endings: ["bugs", "errors", "surprises"] },
+                    // Same green as the scroll bar's completion glow
+                    { endings: ["whatever he wants"], className: "text-green-500 [text-shadow:0_0_12px_rgb(34_197_94/0.35)]" },
+                  ]}
                 />
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-xl">

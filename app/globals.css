@@ -89,3 +89,78 @@
     @apply font-display tracking-tight;
   }
 }
+
+@layer utilities {
+  /* Scroll progress bar: one-off green glow when the page has been read to the end, then back to the accent */
+  .animate-bar-complete {
+    animation: bar-complete 1.6s ease-in-out 1 both;
+  }
+
+  /* Polished orange metal with a light sweep across it.
+     Light mode keeps the highlight orange so the word never washes out against the page. */
+  .text-metallic-orange {
+    background-image: linear-gradient(
+      110deg,
+      #7c2d12 0%,
+      #c2410c 20%,
+      #ea580c 34%,
+      #fdba74 46%,
+      #f97316 54%,
+      #c2410c 68%,
+      #7c2d12 84%,
+      #9a3412 100%
+    );
+    background-size: 250% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 1px 0 rgb(124 45 18 / 0.5));
+    animation: metallic-shine 3.5s ease-in-out infinite;
+  }
+
+  .dark .text-metallic-orange {
+    background-image: linear-gradient(
+      110deg,
+      #7c2d12 0%,
+      #c2410c 18%,
+      #fb923c 34%,
+      #fff7ed 46%,
+      #fdba74 52%,
+      #ea580c 66%,
+      #9a3412 82%,
+      #c2410c 100%
+    );
+    filter: drop-shadow(0 1px 0 rgb(124 45 18 / 0.35)) drop-shadow(0 0 6px rgb(251 146 60 / 0.3));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .text-metallic-orange {
+      animation: none;
+      background-position: 50% 0;
+    }
+  }
+}
+
+@keyframes bar-complete {
+  0%,
+  100% {
+    background-color: hsl(var(--highlight));
+    box-shadow: 0 0 0 0 rgb(34 197 94 / 0);
+  }
+  20%,
+  60% {
+    background-color: rgb(34 197 94);
+    box-shadow: 0 0 10px 2px rgb(34 197 94 / 0.7);
+  }
+}
+
+@keyframes metallic-shine {
+  0% {
+    background-position: 100% 0;
+  }
+  60%,
+  100% {
+    background-position: 0% 0;
+  }
+}

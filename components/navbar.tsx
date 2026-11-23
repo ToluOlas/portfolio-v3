@@ -2,14 +2,46 @@
 
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { motion, useMotionValueEvent, useScroll, useSpring } from 'framer-motion';
+import { cn } from '@/lib/utils';
 import { ThemeToggle } from './theme-toggle';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 200, damping: 30, restDelta: 0.001 });
+  // Once a page has been read to the end the bar stays full; it resets on reload or navigation.
+  const [completed, setCompleted] = useState(false);
+  // After navigating, the old page's scroll position can briefly report ~100%. Only allow
+  // completion again once the new page has been seen near the top.
+  const armed = useRef(true);
+  const pathname = usePathname();
+  const firstRender = useRef(true);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    armed.current = false;
+    setCompleted(false);
+    progress.jump(0);
+    // Fallback: by now the router has reset the scroll position.
+    const t = setTimeout(() => {
+      armed.current = true;
+    }, 400);
+    return () => clearTimeout(t);
+  }, [pathname, progress]);
+
+  useMotionValueEvent(scrollYProgress, 'change', (v) => {
+    if (!armed.current) {
+      if (v < 0.99) armed.current = true;
+      return;
+    }
+    if (!completed && v >= 0.99) setCompleted(true);
+  });
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -76,11 +108,14 @@ export function Navbar() {
         )}
       </div>
 
-      {/* Scroll progress */}
+      {/* Scroll progress: once the page has been read to the end it locks full and flashes green */}
       <motion.div
         aria-hidden="true"
-        className="absolute left-0 right-0 -bottom-px h-0.5 origin-left bg-highlight"
-        style={{ scaleX: progress }}
+        className={cn(
+          'absolute left-0 right-0 -bottom-px h-0.5 origin-left bg-highlight',
+          completed && 'animate-bar-complete'
+        )}
+        style={{ scaleX: completed ? 1 : progress }}
       />
     </nav>
   );
