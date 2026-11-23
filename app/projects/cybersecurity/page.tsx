@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CybersecurityProject() {
   return (
-    <div className="min-h-screen bg-background py-20">
+    <div className="min-h-screen bg-background py-10 sm:py-20">
       <div className="container mx-auto px-4">
         <Link href="/" className="inline-block mb-8">
           <Button variant="outline" size="sm" className="group border-blue-500/20 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
@@ -20,9 +20,10 @@ export default function CybersecurityProject() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
+          className="break-words"
         >
-          <h1 className="text-4xl font-bold mb-6">Workday for a Weekday - Cybersecurity Training and Awareness</h1>
-          <div className="relative w-4/5 mx-auto mb-8 rounded-lg overflow-hidden aspect-video">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6">Workday for a Weekday - Cybersecurity Training and Awareness</h1>
+          <div className="relative w-full md:w-4/5 mx-auto mb-8 rounded-lg overflow-hidden aspect-video">
             <iframe
               src="https://www.youtube.com/embed/Xh33VmkGBc8?start=25"
               title="Workday for a Weekday - Gameplay Footage"
@@ -32,9 +33,9 @@ export default function CybersecurityProject() {
             />
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900">
-              <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-8">
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900">
+              <h2 className="text-sm sm:text-xl font-semibold mb-2 sm:mb-4">Technologies Used</h2>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm">C#</span>
                 <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm">.NET</span>
@@ -43,18 +44,18 @@ export default function CybersecurityProject() {
               </div>
             </div>
             
-            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900">
-              <h2 className="text-xl font-semibold mb-4">Development Time</h2>
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900">
+              <h2 className="text-sm sm:text-xl font-semibold mb-2 sm:mb-4">Development Time</h2>
               <p className="text-muted-foreground">6 months</p>
             </div>
             
-            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900">
-              <h2 className="text-xl font-semibold mb-4">Project Status</h2>
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900">
+              <h2 className="text-sm sm:text-xl font-semibold mb-2 sm:mb-4">Project Status</h2>
               <p className="text-muted-foreground">Completed</p>
             </div>
 
-            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900">
-              <h2 className="text-xl font-semibold mb-4">Repository</h2>
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900">
+              <h2 className="text-sm sm:text-xl font-semibold mb-2 sm:mb-4">Repository</h2>
               <a
                 href="https://github.com/ToluOlas/Cyber-Security-RPG"
                 target="_blank"
@@ -69,7 +70,7 @@ export default function CybersecurityProject() {
             </div>
           </div>
           
-          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-blue-100 dark:border-blue-900 mb-8">
+          <div className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900 mb-8">
             <h2 className="text-lg font-semibold mb-4">Contents</h2>
             <div className="flex flex-col gap-2">
               {[
@@ -91,7 +92,7 @@ export default function CybersecurityProject() {
             </div>
           </div>
 
-          <div id="overview" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+          <div id="overview" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-5 sm:p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
             <p className="text-muted-foreground mb-6">
               Most people know cybersecurity matters. Most people still get phished.
@@ -120,12 +121,12 @@ export default function CybersecurityProject() {
             </p>
           </div>
 
-          <div id="the-problem" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+          <div id="the-problem" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-5 sm:p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">The Problem</h2>
             <p className="text-muted-foreground mb-6">
               Cybersecurity is one of those topics everyone agrees matters... and almost nobody engages with voluntarily. The threat landscape is expanding constantly, with new users, new platforms, and new attack methods emerging every day. And yet, despite years of awareness campaigns and training programs, human error remains the leading cause of most data breaches, both personally and professionally.
             </p>
-            <div className="flex gap-8 items-center">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center">
               <div className="flex-1 flex flex-col gap-4">
                 <p className="text-muted-foreground">
                   Most cybersecurity education; be it a campaign poster, an online course, or a workplace training module, is almost entirely focused on just informing. It tells you what phishing is. It explains what a strong password looks like. But information without the practical experience of applying it under pressure, rarely changes behaviour. You can know exactly what a phishing email looks like and still click the wrong link on a busy Tuesday morning.
@@ -134,7 +135,7 @@ export default function CybersecurityProject() {
                   Second, cybersecurity is uniquely difficult to practice. Unlike learning to drive, where the consequences of mistakes are immediate and real, you can't safely put someone in front of a genuine cyber threat just to teach them a lesson. That gap between knowing and doing is where most training falls short.
                 </p>
               </div>
-              <div className="w-1/2 shrink-0">
+              <div className="w-full md:w-1/2 shrink-0">
                 <img
                   src="/fortinet2023.png"
                   alt="Fortinet 2023 cybersecurity report"
@@ -146,9 +147,9 @@ export default function CybersecurityProject() {
 
             </div>
 
-            <div className="mt-8 bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-6 border border-blue-100 dark:border-blue-900">
+            <div className="mt-8 bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900">
               <h3 className="text-lg font-semibold mb-4">🔍 Did you know?</h3>
-              <ul className="list-disc list-inside space-y-3 text-muted-foreground">
+              <ul className="list-disc pl-5 space-y-3 text-muted-foreground">
                 <li>85% of organisations have a cybersecurity training program in place, yet <strong>almost 60%</strong> of business leaders believe their employees still lack cybersecurity awareness.</li>
                 <li>Phishing, malware, and password attacks remain the most common methods used by attackers, all of which target human habits rather than technical vulnerabilities.</li>
                 <li>Research shows that cramming information to pass a certification test actively harms long-term knowledge retention (who could have guessed).</li>
@@ -159,7 +160,7 @@ export default function CybersecurityProject() {
               So what is being done about this? Awareness campaigns do a decent job of simplifying information. Posters, videos, short form content; they can be catchy, but they struggle to make the information feel relevant or urgent to the average person. Training courses go deeper, but they're dependent on the learner's motivation, and when the goal is a certificate rather than genuine understanding, the knowledge rarely sticks.
             </p>
 
-            <p className="text-muted-foreground mt-8 mb-8 text-center italic text-lg">
+            <p className="text-muted-foreground mt-8 mb-8 text-center italic text-base sm:text-lg">
               “Effective influencing requires more than simply informing people about what they should and
               should not do: they need, first of all, to accept that the information is relevant, secondly,
               understand how they ought to respond, and thirdly, be willing to do this in the face of many
@@ -171,11 +172,11 @@ export default function CybersecurityProject() {
             <img
               src="/vital signs.jpg"
               alt="Vital Signs: ED simulation game screenshot"
-              className="mx-auto block w-1/2 object-contain rounded-lg"
+              className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg"
             />
             <p className="text-xs text-muted-foreground text-center mt-1">Screenshot from "Vital Signs: ED" by BreakawayGames</p>
 
-            <div className="mt-6 bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-6 border border-blue-100 dark:border-blue-900">
+            <div className="mt-6 bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900">
               <h3 className="text-lg font-semibold mb-3">📋 Serious Games</h3>
               <p className="text-muted-foreground italic">
                 "Digital games or simulations designed with a primary purpose beyond pure entertainment, focusing instead on education, training, healthcare, marketing, or behavioural change."
@@ -197,11 +198,11 @@ export default function CybersecurityProject() {
 
           </div>
 
-          <div id="design-decisions" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+          <div id="design-decisions" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-5 sm:p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">Design Decisions</h2>
 
-            <div className="flex gap-8 items-center">
-              <div className="w-1/6 shrink-0">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center">
+              <div className="w-28 mx-auto md:mx-0 md:w-1/6 shrink-0">
                 <img
                   src="/steve.png"
                   alt="Steve character sprite"
@@ -209,7 +210,7 @@ export default function CybersecurityProject() {
                 />
                 <p className="text-xs text-muted-foreground text-center mt-1">Screenshot from "Workday for a Weekday" by yours truly.</p>
               </div>
-              <div className="bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-6 border border-blue-100 dark:border-blue-900 flex-1">
+              <div className="bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900 flex-1">
                 <h3 className="text-lg font-semibold mb-4">🔍 Did you know?</h3>
                 <p className="text-muted-foreground">
                   The United Kingdom has the highest proportion of people named Steve of any country in the world, roughly 0.55% of the population. That's approximately 368,000 Steves currently living in Britain.
@@ -237,38 +238,38 @@ export default function CybersecurityProject() {
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="bg-blue-50/80 dark:bg-blue-950/50">
-                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900 w-1/4">Threat</th>
-                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Description</th>
+                    <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900 w-1/4">Threat</th>
+                    <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900">Description</th>
                   </tr>
                 </thead>
                 <tbody className="text-muted-foreground">
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Malware</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Software designed to damage or infiltrate a system. Includes viruses, ransomware, trojans, and spyware.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Malware</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Software designed to damage or infiltrate a system. Includes viruses, ransomware, trojans, and spyware.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Phishing</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Attackers impersonate trusted entities via email, text, or fake websites to steal sensitive information.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Phishing</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Attackers impersonate trusted entities via email, text, or fake websites to steal sensitive information.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Spoofing</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Impersonating another source (an email address, a website, a caller ID) to deceive users or gain unauthorised access.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Spoofing</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Impersonating another source (an email address, a website, a caller ID) to deceive users or gain unauthorised access.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Brute Force / Weak Passwords</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Systematically guessing passwords until the correct one is found. Simple or repeated passwords make this trivially easy.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Brute Force / Weak Passwords</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Systematically guessing passwords until the correct one is found. Simple or repeated passwords make this trivially easy.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Insider Threats</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Individuals within an organisation, intentionally or accidentally, misusing access to compromise systems or data.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Insider Threats</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Individuals within an organisation, intentionally or accidentally, misusing access to compromise systems or data.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Man-in-the-Middle</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">A third party secretly intercepts communication between two parties, often over unsecured networks.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Man-in-the-Middle</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">A third party secretly intercepts communication between two parties, often over unsecured networks.</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Social Engineering</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Manipulating people psychologically into divulging information or granting access, without any technical exploit.</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Social Engineering</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Manipulating people psychologically into divulging information or granting access, without any technical exploit.</td>
                   </tr>
                 </tbody>
               </table>
@@ -286,39 +287,39 @@ export default function CybersecurityProject() {
 
             {/* Email System */}
             <h4 className="text-lg font-semibold mt-8 mb-6">The Email System: Phishing, Spoofing &amp; Social Engineering</h4>
-            <img src="/email screen screenshot.png" alt="Screenshot of the computer UI in Unity, displaying the email screen" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <img src="/email screen screenshot.png" alt="Screenshot of the computer UI in Unity, displaying the email screen" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">Screenshot of the computer UI in Unity, displaying the email screen</p>
             <p className="text-muted-foreground mt-6">
               The email system is the core gameplay mechanic. Each level, the player receives a set number of emails that must be cleared from the inbox within the time limit. Emails are a mix of legitimate company correspondence and malicious ones, and the player must respond to each with one of two options: Reply or Report.
             </p>
-            <div className="flex gap-8 items-center mt-6">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center mt-6">
               <p className="text-muted-foreground flex-1">
                 Identifying the correct response requires attention to detail. Legitimate company emails use the @corpo.com domain. Spoofed emails use near identical variations of the domain. Some emails originate from real employees but contain malicious content or requests, while others may appear suspicious but are genuine. This diversity trains players to assess the full context of a message rather than rely on surface level info.
               </p>
-              <div className="overflow-x-auto w-1/2 shrink-0">
+              <div className="overflow-x-auto w-full md:w-1/2 shrink-0">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
                     <tr className="bg-blue-50/80 dark:bg-blue-950/50">
-                      <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Sender</th>
-                      <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Email Message</th>
-                      <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Correct Action</th>
+                      <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900">Sender</th>
+                      <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900">Email Message</th>
+                      <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900">Correct Action</th>
                     </tr>
                   </thead>
                   <tbody className="text-muted-foreground">
                     <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                      <td className="px-4 py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpo.com</td>
-                      <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">"Please enable two factor authentication here:"</td>
-                      <td className="px-4 py-3 font-semibold text-green-600 dark:text-green-400 border border-blue-100 dark:border-blue-900">REPLY</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpo.com</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">"Please enable two factor authentication here:"</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 font-semibold text-green-600 dark:text-green-400 border border-blue-100 dark:border-blue-900">REPLY</td>
                     </tr>
                     <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                      <td className="px-4 py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpol.com</td>
-                      <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">"Please enable two factor authentication here:"</td>
-                      <td className="px-4 py-3 font-semibold text-red-600 dark:text-red-400 border border-blue-100 dark:border-blue-900">REPORT</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpol.com</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">"Please enable two factor authentication here:"</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 font-semibold text-red-600 dark:text-red-400 border border-blue-100 dark:border-blue-900">REPORT</td>
                     </tr>
                     <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                      <td className="px-4 py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpo.com</td>
-                      <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">"Please send me your account details."</td>
-                      <td className="px-4 py-3 font-semibold text-red-600 dark:text-red-400 border border-blue-100 dark:border-blue-900">REPORT</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 font-mono text-xs border border-blue-100 dark:border-blue-900">fjones@corpo.com</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">"Please send me your account details."</td>
+                      <td className="px-3 py-2 sm:px-4 sm:py-3 font-semibold text-red-600 dark:text-red-400 border border-blue-100 dark:border-blue-900">REPORT</td>
                     </tr>
                   </tbody>
                 </table>
@@ -327,12 +328,12 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mt-6">
               Certain emails trigger an additional compose-email minigame, where the player must select the correct recipient and attach the correct file before sending. Selecting either field incorrectly results in a point deduction, representing the real-world risk of misdirected sensitive information.
             </p>
-            <img src="/reply screen screenshot.png" alt="Compose-email reply screen UI in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-6" />
+            <img src="/reply screen screenshot.png" alt="Compose-email reply screen UI in Unity" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-6" />
             <p className="text-xs text-muted-foreground text-center mt-1">Compose-email reply screen UI in Unity</p>
 
             {/* Office & NPC System */}
             <h4 className="text-lg font-semibold mt-8 mb-6">The Office &amp; NPC System: Insider Threats</h4>
-            <img src="/npc random movement screenshot.png" alt="NPCs walking around the office randomly along the grid in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <img src="/npc random movement screenshot.png" alt="NPCs walking around the office randomly along the grid in Unity" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">NPCs walking around the office randomly along the grid in Unity</p>
             <p className="text-muted-foreground mt-6">
               Insider threats and physical security risks were represented through the office environment. NPCs move around the office throughout each level following a grid-based movement system. If the player leaves their desk without logging out of their computer, there is a chance that a passing NPC will tamper with it, resulting in a point deduction. This mechanic directly represents the risk of leaving a device unlocked and unattended in a shared workspace.
@@ -340,18 +341,18 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mt-6">
               To create situations where the player must leave their desk, a machine maintenance minigame was implemented. Devices around the office break at random intervals, and leaving them broken for too long also results in a point deduction. This creates a recurring conflict between staying at the computer to manage emails and moving around the office to maintain equipment, while ensuring the screen remains locked when unattended.
             </p>
-            <img src="/machine locations upscale.png" alt="Office marked with machine locations that must be fixed if broken" className="mx-auto block w-1/2 object-contain rounded-lg mt-6" />
+            <img src="/machine locations upscale.png" alt="Office marked with machine locations that must be fixed if broken" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-6" />
             <p className="text-xs text-muted-foreground text-center mt-1">Office marked with machine locations that must be fixed if broken</p>
 
             {/* Passcode Scanner */}
             <h4 className="text-lg font-semibold mt-8 mb-6">The Passcode Scanner: Brute Force &amp; Weak Passwords</h4>
-            <img src="/passcode scanner mockup.png" alt="Passcode Scanner Mock-Up" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <img src="/passcode scanner mockup.png" alt="Passcode Scanner Mock-Up" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">Passcode Scanner Mock-Up</p>
             <p className="text-muted-foreground text-left mt-6">
               The passcode scanner is triggered by specific emails and requires the player to leave their desk and interact with a physical scanner object in the office. The player creates a passcode using a grid of coloured symbols (circles, diamonds, and hearts in red, blue, and green) to begin a document scan.
             </p>
 
-            <div className="flex gap-6 items-center mt-6">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mt-6">
               <div className="flex flex-col flex-1 gap-4">
                 <p className="text-muted-foreground">
                   The scan takes approximately 15 seconds to complete, during which the player is expected to return to other tasks. Once complete, the player must re-enter the same passcode from memory within three attempts.
@@ -360,15 +361,15 @@ export default function CybersecurityProject() {
                   The passcode is evaluated against four criteria: length, colour diversity, shape diversity, and whether it forms a simple repeating sequence. A passcode that fails any of these criteria results in a point deduction, regardless of whether it was recalled correctly. This is designed to reinforce the understanding that a memorable but weak password offers little real protection.
                 </p>
               </div>
-              <div className="w-fit shrink-0">
-                <img src="/passcode examples.jpg" alt="Examples of good and bad passcodes" className="h-64 w-auto object-contain rounded-lg" />
+              <div className="w-full md:w-fit shrink-0">
+                <img src="/passcode examples.jpg" alt="Examples of good and bad passcodes" className="block mx-auto w-auto max-w-full max-h-72 md:max-h-none md:h-64 object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Examples of good and bad passcodes</p>
               </div>
             </div>
 
             {/* Wi-Fi System */}
             <h4 className="text-lg font-semibold mt-8 mb-6">The Wi-Fi System: Man-in-the-Middle Attacks</h4>
-            <div className="flex gap-6 items-center">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center">
               <div className="flex flex-col flex-1 gap-4">
                 <p className="text-muted-foreground">
                   The Wi-Fi mechanic runs automatically in the background from the start of the level. The company network connection degrades gradually over time, moving between connection strength states. If the connection is poor enough, the player is automatically switched to an unsecured street network, at which point points begin to deplete for as long as the unsecured connection remains active.
@@ -377,8 +378,8 @@ export default function CybersecurityProject() {
                   The player can monitor connection strength through the settings screen and troubleshoot it before it drops, or reconnect after a dropout. Both actions consume time. The mechanic is intended to build awareness of network security as an ongoing responsibility rather than a one-time action.
                 </p>
               </div>
-              <div className="w-fit shrink-0">
-                <img src="/WiFi connections and their statuses.png" alt="Wi-Fi connections and their statuses" className="h-64 w-auto object-contain rounded-lg" />
+              <div className="w-full md:w-fit shrink-0">
+                <img src="/WiFi connections and their statuses.png" alt="Wi-Fi connections and their statuses" className="block mx-auto w-auto max-w-full max-h-72 md:max-h-none md:h-64 object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Wi-Fi connections and their statuses</p>
               </div>
             </div>
@@ -391,7 +392,7 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-6">
               Four characters carry the narrative: Steve, the player character; Mark, the negligent manager whose behaviour enables a hostile work environment; Fred, Steve's line manager who introduces new mechanics and offers guidance; and Q, a mysterious figure outside the Corpo building who provides background on the threats Steve will face each day.
             </p>
-            <div className="flex gap-6 mt-4">
+            <div className="flex flex-col md:flex-row gap-6 mt-4">
               <div className="flex-1">
                 <img src="/exampledialogue1.png" alt="Dialogue Example 1" className="w-[90%] mx-auto block object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Dialogue Example 1</p>
@@ -408,26 +409,26 @@ export default function CybersecurityProject() {
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="bg-blue-50/80 dark:bg-blue-950/50">
-                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900 w-1/4">Level</th>
-                    <th className="px-4 py-3 font-semibold border border-blue-100 dark:border-blue-900">Mechanics Included</th>
+                    <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900 w-1/4">Level</th>
+                    <th className="px-3 py-2 sm:px-4 sm:py-3 font-semibold border border-blue-100 dark:border-blue-900">Mechanics Included</th>
                   </tr>
                 </thead>
                 <tbody className="text-muted-foreground">
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 1</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Email System</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Day 1</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Email System</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 2</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Email System, Machine Maintenance, Compose Emails</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Day 2</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Email System, Machine Maintenance, Compose Emails</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 3</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">Email System, Machine Maintenance, Compose Emails, Passcode Scanner, Wi-Fi Connection</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Day 3</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">Email System, Machine Maintenance, Compose Emails, Passcode Scanner, Wi-Fi Connection</td>
                   </tr>
                   <tr className="even:bg-blue-50/30 dark:even:bg-blue-950/20">
-                    <td className="px-4 py-3 font-medium border border-blue-100 dark:border-blue-900">Day 4</td>
-                    <td className="px-4 py-3 border border-blue-100 dark:border-blue-900">All of the above</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 font-medium border border-blue-100 dark:border-blue-900">Day 4</td>
+                    <td className="px-3 py-2 sm:px-4 sm:py-3 border border-blue-100 dark:border-blue-900">All of the above</td>
                   </tr>
                 </tbody>
               </table>
@@ -437,33 +438,33 @@ export default function CybersecurityProject() {
             </p>
 
             {/* Visual style */}
-            <div className="flex gap-6 items-center mt-10">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mt-10">
               <div className="flex flex-col flex-1 gap-4">
                 <h3 className="text-xl font-semibold">Visual style</h3>
                 <p className="text-muted-foreground">
                   The game uses a pixelated 2D top-down perspective, built in Unity using open-source tilesets assembled in Tiled, a 2D map editor that exports directly into Unity. The visual style was chosen primarily for its clarity. A top-down office environment is immediately readable, character movement is easy to follow, and the aesthetic keeps the focus on the gameplay systems rather than the visuals. The overall look was loosely inspired by late-2000s top-down RPGs, particularly the overworld style of the early Pokémon series.
                 </p>
               </div>
-              <div className="w-fit shrink-0">
-                <img src="/pokemon DP screenshot.png" alt="Screenshot of Pokémon Diamond and Pearl, the visual reference" className="h-64 w-auto object-contain rounded-lg" />
+              <div className="w-full md:w-fit shrink-0">
+                <img src="/pokemon DP screenshot.png" alt="Screenshot of Pokémon Diamond and Pearl, the visual reference" className="block mx-auto w-auto max-w-full max-h-72 md:max-h-none md:h-64 object-contain rounded-lg" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Pokémon Diamond and Pearl</p>
               </div>
             </div>
           </div>
 
-          <div id="the-implementation" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+          <div id="the-implementation" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-5 sm:p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">The Implementation</h2>
             <p className="text-muted-foreground mb-8">
               The game was built in Unity 2D using C#, with maps designed in Tiled and imported directly into Unity. This section covers the implementation of the core systems, the technical decisions made during development, and some of the more interesting problems that came up along the way.
             </p>
 
             <h3 className="text-xl font-semibold mb-6">The Email System</h3>
-            <div className="flex gap-6 items-start">
+            <div className="flex flex-col md:flex-row gap-6 md:items-start">
               <div className="flex-1">
                 <p className="text-muted-foreground mb-4">
                   The email system is built around two classes: <code>email</code> and <code>emailManager</code>. The <code>email</code> class acts as a data container, storing everything needed to define and display a single email within the game. Each email object holds:
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground mb-6">
                   <li><code>emailTopic</code>, <code>emailSender</code>, <code>emailRecipients</code>, and <code>emailMessage</code> for display purposes</li>
                   <li>Two reply options, each with an assigned integer result value on a scale of 1 to 4, plus a separate <code>reportResult</code> for the Report action</li>
                   <li>An <code>emailType</code> string classifying the email as safe, malicious, phishing, or spoofing</li>
@@ -473,7 +474,7 @@ export default function CybersecurityProject() {
                   Compose-email objects extend this with additional fields: three recipient options, three attachment options, and integer values identifying the correct choice for each. Everything a compose-email needs to function is self-contained within the object itself.
                 </p>
               </div>
-              <div className="shrink-0 w-64">
+              <div className="shrink-0 w-full sm:w-2/3 mx-auto md:mx-0 md:w-64">
                 <img src="/emailclass screenshot.png" alt="Part of the email class" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Part of the email class</p>
               </div>
@@ -481,7 +482,7 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mt-6 mb-4">
               The <code>emailManager</code> holds all emails for a given level in a list called <code>emailQueue</code> and manages the UI that displays them. When <code>updateInbox()</code> is called, if fewer than five emails remain in the queue, blank email objects are temporarily added to bring the count up to five, all five preview button slots are updated from the list, and the blanks are then removed. This keeps the UI consistently populated without requiring separate logic for partially filled inboxes.
             </p>
-            <div className="flex gap-6 items-center mt-4">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mt-4">
               <div className="flex-1">
                 <img src="/email object in CSharp.jpg" alt="Email object in C# called to game UI" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1"><code>email</code> object in C# called to game UI</p>
@@ -497,7 +498,7 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-6">
               When the player responds to an email, the result value for the chosen option is passed to the <code>scoreManager</code>, which handles point allocation. Emails flagged as minigames open a secondary screen upon a correct reply. Compose-email types require the player to select the correct recipient and attachment before sending, with each field evaluated independently by the <code>scoreManager</code>.
             </p>
-            <img src="/reply screen screenshot.png" alt="Compose-email reply screen UI in Unity" className="mx-auto block w-1/2 object-contain rounded-lg mt-4" />
+            <img src="/reply screen screenshot.png" alt="Compose-email reply screen UI in Unity" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-4" />
             <p className="text-xs text-muted-foreground text-center mt-1">Compose-email reply screen UI in Unity</p>
 
             <h3 className="text-xl font-semibold mt-10 mb-6">The NPC &amp; Office System</h3>
@@ -507,7 +508,7 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-4">
               Office NPCs spawn at the start of each level and navigate the office using a network of nodes. When an NPC reaches a node, the node&apos;s <code>switchDirection</code> method evaluates which directions are enabled for that position and randomly selects one. If no directions are enabled, the NPC stops. This produces varied movement paths across the office without every route needing to be manually scripted.
             </p>
-            <div className="flex gap-6 items-center mt-4 mb-6">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mt-4 mb-6">
               <div className="flex-1">
                 <img src="/npcmovementdraft.png" alt="Movement pattern for NPCs in the office" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Movement pattern for NPCs in the office</p>
@@ -520,7 +521,7 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-4">
               The security mechanic is handled by a trigger zone around the player&apos;s cubicle, managed by the <code>playerOfficeCheck</code> script. This zone tracks two things independently: whether the player is inside it, and whether any NPCs are inside it. If an NPC enters the zone while the player is absent and the computer is still logged in, <code>Random.Range(0, 2)</code> is called; a result of 1 triggers <code>vulnerablePC()</code> on the <code>scoreManager</code>, deducting points. The 50% chance reflects the unpredictable nature of insider threats rather than making the penalty feel automatic or unfair.
             </p>
-            <img src="/officeCheckerScript.png" alt="TriggerEnter and TriggerExit scripts for the playerOfficeCheck script" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
+            <img src="/officeCheckerScript.png" alt="TriggerEnter and TriggerExit scripts for the playerOfficeCheck script" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
             <p className="text-xs text-muted-foreground text-center mb-6">TriggerEnter and TriggerExit scripts for the <code>playerOfficeCheck</code> script</p>
             <p className="text-muted-foreground mb-4">
               Devices around the office are assigned a random chance to break at set intervals, managed by the game manager. The player fixes them by walking to the device and interacting with it, which triggers a repair method and removes the broken status marker from both the HUD and the map.
@@ -533,19 +534,19 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-4">
               The player creates a passcode by selecting from a grid of nine coloured symbols — circles, diamonds, and hearts in red, blue, and green. Each symbol maps to an integer value from 1 to 9, and the entered passcode is stored as a list of integers. A switch statement in <code>scannerController</code> handles both adding each symbol&apos;s value to the list and placing the correct symbol graphic in the correct position on the UI.
             </p>
-            <img src="/scanner object and UI screenshot.jpg" alt="Symbol values and switch statement in scannerController" className="mx-auto block w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
+            <img src="/scanner object and UI screenshot.jpg" alt="Symbol values and switch statement in scannerController" className="mx-auto block w-full sm:w-3/4 md:w-1/2 object-contain rounded-lg mt-4 mb-1 bg-blue-50/30 dark:bg-blue-950/20" />
             <p className="text-xs text-muted-foreground text-center mb-6">Scanner object and scanner UI</p>
             <p className="text-muted-foreground mb-4">
               Once the passcode is set, scanning begins and takes approximately 15 seconds to complete. The player is expected to return to other tasks during this time. When the scan finishes, the player must re-enter the passcode from memory within three attempts.
             </p>
             <p className="text-muted-foreground mb-2">The passcode is evaluated against four criteria by the <code>passwordMinigame</code> class:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground mb-6">
               <li><strong>Length:</strong> the passcode must be longer than three symbols</li>
               <li><strong>Colour diversity:</strong> symbols are grouped by colour (Red: 1,2,3 / Blue: 4,5,6 / Green: 7,8,9) and more than one colour group must be present</li>
               <li><strong>Shape diversity:</strong> symbols are grouped by shape (Circle: 1,4,7 / Diamond: 2,5,8 / Heart: 3,6,9) and more than one shape group must be present</li>
               <li><strong>Simple sequence check:</strong> the <code>isSimpleSequence</code> method iterates through the list and returns true if every value increments by exactly 1, flagging predictable patterns as weak</li>
             </ul>
-            <div className="flex gap-6 items-center mt-4 mb-6">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mt-4 mb-6">
               <div className="flex-1">
                 <img src="/For loop for colourCount.png" alt="For loop for the colourCount method in passwordMinigame" className="w-[90%] mx-auto block object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">For loop for the <code>colourCount</code> method in <code>passwordMinigame</code></p>
@@ -560,13 +561,13 @@ export default function CybersecurityProject() {
             </p>
 
             <h3 className="text-xl font-semibold mt-10 mb-6">Game &amp; Level Management</h3>
-            <div className="flex gap-6 items-start mb-6">
+            <div className="flex flex-col md:flex-row gap-6 md:items-start mb-6">
               <div className="flex-1">
                 <p className="text-muted-foreground mb-4">
                   The <code>gameManager</code> is the central script that controls the state of the game. It coordinates the start and end conditions of each level and acts as the point of communication between all other major systems.
                 </p>
                 <p className="text-muted-foreground mb-2">When a level begins, the <code>gameManager</code> triggers three things simultaneously:</p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground mb-6">
                   <li>The <code>countdownTimer</code> starts counting down</li>
                   <li>The <code>NPCSpawner</code> begins populating the office with NPCs</li>
                   <li>The <code>connectionStatus</code> script starts the Wi-Fi degradation cycle</li>
@@ -575,13 +576,13 @@ export default function CybersecurityProject() {
                   When the <code>emailQueue</code> reaches zero, the <code>emailManager</code> signals the <code>gameManager</code> to call the win sequence. The <code>gameManager</code> also monitors the <code>scoreManager</code> continuously. If the player accumulates too many high-severity mistakes, the loss sequence is triggered before the timer expires.
                 </p>
               </div>
-              <div className="shrink-0 w-96">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img src="/gameplay activity diagram.png" alt="Gameplay Activity Diagram" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Gameplay Activity Diagram</p>
               </div>
             </div>
-            <div className="flex gap-6 items-center mb-6">
-              <div className="shrink-0 w-56">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mb-6">
+              <div className="shrink-0 w-full sm:w-2/3 mx-auto md:mx-0 md:w-56">
                 <img src="/timer function.png" alt="Timer countdown functionality from the timer script" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Timer countdown functionality from the timer script</p>
               </div>
@@ -592,7 +593,7 @@ export default function CybersecurityProject() {
             <p className="text-muted-foreground mb-4">
               The Wi-Fi system runs on a separate <code>connectionStatus</code> script that manages a <code>connectVal</code> integer ranging from 5 to 0. At set intervals, <code>wifiShift()</code> is called, which uses <code>Random.Range(0, 100)</code> and a switch statement on the current <code>connectVal</code> to determine whether the connection goes up, stays the same, or goes down. The probability of degradation increases as <code>connectVal</code> decreases: at a value of 5 the connection always drops by one, while at higher values there is a chance it holds or recovers. At zero, the player is moved onto an unsecured network and the <code>scoreManager</code> begins applying a continuous point deduction until the connection is restored.
             </p>
-            <div className="flex gap-6 items-center mt-4 mb-6">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center mt-4 mb-6">
               <div className="flex-1">
                 <img src="/wifishift in systemStatus.png" alt="Part of the wifiShift method in the systemStatus class" className="w-full object-contain rounded-lg bg-blue-50/30 dark:bg-blue-950/20" />
                 <p className="text-xs text-muted-foreground text-center mt-1">Part of the <code>wifiShift</code> method in the <code>systemStatus</code> class</p>
@@ -607,7 +608,7 @@ export default function CybersecurityProject() {
             </p>
           </div>
 
-          <div id="results" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
+          <div id="results" className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-lg p-5 sm:p-8 border border-blue-100 dark:border-blue-900 mb-8 scroll-mt-24">
             <h2 className="text-2xl font-semibold mb-6">Results &amp; Evaluation</h2>
 
             <h3 className="text-xl font-semibold mb-6">Pre-Game Findings</h3>
@@ -615,17 +616,17 @@ export default function CybersecurityProject() {
               Before playing, participants completed a survey measuring their existing cybersecurity knowledge, habits, and attitudes. Key findings:
             </p>
 
-            <div className="flex gap-8 items-center mb-8">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center mb-8">
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Knowledge &amp; Confidence</h4>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                   <li>Participants rated their overall cybersecurity knowledge as moderate on average, somewhere between complete beginners and confident experts</li>
                   <li>Threat recognition confidence was slightly higher than general knowledge, but most participants only rated themselves slightly above average</li>
                   <li>Phishing was the most widely recognised threat, with malware and ransomware close behind, while network-based threats like Man-in-the-Middle and Wi-Fi eavesdropping were far less recognised</li>
                   <li>Only around 50% of participants felt confident recognising social engineering attempts</li>
                 </ul>
               </div>
-              <div className="shrink-0 w-96">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Threat recognition results Bar Chart.png"
                   alt="Threat recognition results Bar Chart"
@@ -636,12 +637,12 @@ export default function CybersecurityProject() {
             </div>
 
             <h4 className="text-lg font-semibold mb-4">Habits</h4>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-6">
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground mb-6">
               <li>Only 17% of participants updated software immediately when prompted; 50% waited for reminders and 33% left it until automatic updates kicked in</li>
               <li>Only around 33% of participants used completely different passwords across all their accounts, with 17% admitting to using the same password everywhere</li>
             </ul>
-            <div className="flex gap-6 mt-4 mb-8 justify-center">
-              <div className="shrink-0 w-96">
+            <div className="flex flex-col md:flex-row gap-6 mt-4 mb-8 justify-center">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Install updates question Pie Chart.png"
                   alt="Install updates question Pie Chart"
@@ -649,7 +650,7 @@ export default function CybersecurityProject() {
                 />
                 <p className="text-xs text-muted-foreground text-center mt-1">Install updates question</p>
               </div>
-              <div className="shrink-0 w-96">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Password habits Pie Chart.png"
                   alt="Password habits Pie Chart"
@@ -659,8 +660,8 @@ export default function CybersecurityProject() {
               </div>
             </div>
 
-            <div className="flex gap-8 items-center mb-8">
-              <div className="shrink-0 w-96">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center mb-8">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Cybersecurity learning willingness Pie Chart.png"
                   alt="Figure 50: Cybersecurity learning willingness Pie Chart"
@@ -670,7 +671,7 @@ export default function CybersecurityProject() {
               </div>
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Attitudes</h4>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                   <li>Participants almost unanimously rated cybersecurity as highly important in their daily lives, with an average importance rating of 4.5 out of 5</li>
                   <li>Despite this, 50% said they were outright unlikely to engage with cybersecurity learning material outside of mandatory settings</li>
                   <li>Only 17% said they were very likely to do so voluntarily</li>
@@ -684,10 +685,10 @@ export default function CybersecurityProject() {
 
             <h3 className="text-xl font-semibold mb-6">Post-Game Findings</h3>
 
-            <div className="flex gap-8 items-start mb-8">
+            <div className="flex flex-col md:flex-row gap-8 md:items-start mb-8">
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Knowledge &amp; Threat Recognition</h4>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                   <li>Overall self-rated cybersecurity knowledge increased by approximately 33% on average after playing</li>
                   <li>The largest improvements came from participants who rated themselves lower before playing, while more experienced participants saw little to no change in their knowledge ratings</li>
                   <li>Despite this split, every single participant felt more confident identifying at least one type of cyber threat after playing</li>
@@ -695,7 +696,7 @@ export default function CybersecurityProject() {
                   <li>Understanding of who poses a cybersecurity threat saw the most significant improvement of any survey question. Recognition of employees, managers, and trusted individuals as potential threats improved dramatically compared to pre-game responses</li>
                 </ul>
               </div>
-              <div className="shrink-0 w-96">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Threat Identification comparison Bar Chart.png"
                   alt="Figure 54 — Threat Identification comparison Bar Chart"
@@ -705,8 +706,8 @@ export default function CybersecurityProject() {
               </div>
             </div>
 
-            <div className="flex gap-8 items-center mb-8">
-              <div className="shrink-0 w-96">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center mb-8">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Standout Aspect Bar Chart.png"
                   alt="Figure 56 — Standout Aspect Bar Chart"
@@ -716,7 +717,7 @@ export default function CybersecurityProject() {
               </div>
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Engagement</h4>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                   <li>The game received an average engagement rating of 7.67 out of 10</li>
                   <li>Story and dialogue were consistently identified as the standout aspects of the experience</li>
                   <li>Gameplay was a secondary but still notable factor in the high engagement scores</li>
@@ -724,16 +725,16 @@ export default function CybersecurityProject() {
               </div>
             </div>
 
-            <div className="flex gap-8 items-center mb-10">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center mb-10">
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Learning Preference</h4>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                   <li>100% of participants said they preferred this method of learning over the method they had previously identified as their favourite, including reading, lectures, and videos</li>
                   <li>Participants were evenly split between those who would return to a fuller version of the game for learning purposes and those who would return purely for entertainment</li>
                   <li>83% indicated a willingness to pay to access an expanded version of the game</li>
                 </ul>
               </div>
-              <div className="shrink-0 w-96">
+              <div className="shrink-0 w-full md:w-72 lg:w-96">
                 <img
                   src="/Learning Method Preference Pie Chart.png"
                   alt="Figure 57 — Learning Method Preference Pie Chart"
@@ -764,7 +765,7 @@ export default function CybersecurityProject() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.4 }}
-            className="bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-6 border border-blue-100 dark:border-blue-900"
+            className="bg-blue-50/50 dark:bg-blue-950/30 rounded-lg p-4 sm:p-6 border border-blue-100 dark:border-blue-900"
           >
             <h3 className="text-lg font-semibold mb-4">My Reflection</h3>
             <p className="text-muted-foreground mb-4">
