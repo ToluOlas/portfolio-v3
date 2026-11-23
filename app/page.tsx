@@ -166,6 +166,15 @@ export default function Home() {
                     />
                     TypeScript
                   </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                      alt="Vue.js"
+                      width={24}
+                      height={24}
+                    />
+                    Vue.js
+                  </li>
                 </ul>
               </div>
               <div className="p-6 rounded-lg bg-white/50 dark:bg-white/5 backdrop-blur-sm hover:shadow-lg transition-shadow border border-blue-100 dark:border-blue-900">
@@ -179,6 +188,16 @@ export default function Home() {
                       height={24}
                     />
                     C# / .NET
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+                      alt="Django"
+                      width={24}
+                      height={24}
+                      className="dark:invert"
+                    />
+                    Django
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
@@ -236,8 +255,8 @@ export default function Home() {
                 <ul className="space-y-6 text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-                      alt="AWS"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+                      alt="Azure"
                       width={24}
                       height={24}
                     />
@@ -264,6 +283,15 @@ export default function Home() {
                       height={24}
                     />
                     Docker
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+                      alt="Google Cloud"
+                      width={24}
+                      height={24}
+                    />
+                    Google Cloud (GCP)
                   </li>
                   <li className="flex items-center gap-3">
                     <Image
