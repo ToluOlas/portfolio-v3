@@ -76,6 +76,7 @@ export default function Home() {
         { name: "Kubernetes", src: devicon("kubernetes/kubernetes-plain.svg") },
         { name: "Machine Learning", src: devicon("tensorflow/tensorflow-original.svg") },
         { name: "Claude / Anthropic API", Icon: Sparkles },
+        { name: "Claude Code", src: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" },
         { name: "Power BI / Power Automate", src: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
         { name: "Celonis EMS", src: "https://i.ibb.co/4RcwhJsp/celonis-Icon.png" },
         { name: "Unity", src: devicon("unity/unity-original.svg"), invertDark: true },
