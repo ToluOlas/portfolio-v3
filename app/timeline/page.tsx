@@ -1,23 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  GraduationCap, 
-  Code, 
-  Brain, 
-  Building2, 
-  Laptop, 
+import {
+  GraduationCap,
+  Code,
+  Brain,
+  Building2,
+  Laptop,
   BookOpen,
   Terminal,
-  Network,
-  Database,
   Users,
-  Gamepad,
-  Shield,
-  Cloud,
   Bot
 } from "lucide-react";
-import Image from "next/image";
 
 interface TimelineItem {
   period: string;
@@ -33,21 +27,53 @@ export default function Timeline() {
     {
       period: "Oct 2026-Present",
       title: "AI Engineer at MyPocketSkill",
-      description: "Working as an AI Engineer at MyPocketSkill.",
-      highlights: [],
-      skills: [],
+      description: "Building production AI agents at MyPocketSkill, having joined through the askollo AI Operator Programme in August 2026.",
+      highlights: [
+        "Built and deployed four production AI agents on the ollo agent platform, integrating GitHub, Google Workspace and Slack to automate workflows",
+        "Designed prompts to a consistent schema and connected agents to external tools and data through platform connectors",
+        "Completed 40+ simulated client conversations on the StayReady Games AI learning platform, practising technical communication and objection handling",
+        "Earned Microsoft Certified: Azure AI Fundamentals (September 2026)"
+      ],
+      skills: ["AI Agents", "Prompt Design", "GitHub", "Google Workspace", "Slack", "Azure AI"],
       icon: <Bot className="w-6 h-6" />
     },
     {
-      period: "2024-2026",
+      period: "Mar 2026-Present",
+      title: "Independent AI Projects",
+      description: "Building AI systems in my own time. I picked up LangGraph, RAG and agent design with no course or employer requiring it.",
+      highlights: [
+        "Designed a multi-agent system in Python with LangGraph, where a primary agent delegates document evaluation, drafting and research to specialised sub-agents",
+        "Implemented Retrieval-Augmented Generation with external APIs to ground answers in verified sources and reduce hallucinated responses",
+        "Running LLMs locally through Ollama for privacy and control",
+        "Built an end-to-end AI voice agent with n8n, ElevenLabs and OpenRouter for a Forward Deployed Engineer bootcamp assessment"
+      ],
+      skills: ["Python", "LangGraph", "RAG", "Ollama", "Claude Code", "n8n", "ElevenLabs"],
+      icon: <Brain className="w-6 h-6" />
+    },
+    {
+      period: "Jun 2025-Feb 2026",
+      title: "Systems Development Consultant, Robert Walters",
+      description: "Accelerate Programme, Robert Walters' structured route into tech consulting, with intensive training in software engineering and consulting skills before client placement.",
+      highlights: [
+        "Built SimpleBank, a Java CLI banking application, in an Agile team of four",
+        "Owned the Payment Control workstream, designing and implementing direct debits and standing orders",
+        "Practised test-driven development, writing unit tests for payment components before implementation",
+        "Took part in peer code reviews and architecture discussions through GitHub pull requests",
+        "Completed Foundational C# with Microsoft (CodeCamp, August 2025)"
+      ],
+      skills: ["Java", "Object Oriented Programming", "Test-Driven Development", "Docker", "Git/GitHub", "Agile", "Agentic AI"],
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      period: "2024-2025",
       title: "Personal Projects & Upskilling",
       description: "Focused on personal projects and skill development after graduating.",
       highlights: [
-        "Completed a 2D Platformer game in Unity",
-        "Took online courses for several technologies, including Microsoft Azure and web technologies",
-        "Built this website!"
+        "Completed a 2D action platformer in Unity, with three levels, enemy AI, unlockable abilities and a boss battle",
+        "Took online courses in Microsoft Azure and web technologies",
+        "Built this website, the third version of my portfolio, with Next.js, TypeScript and Tailwind CSS"
       ],
-      skills: ["HTML/CSS/Javascript", "C#", "Unity", "Azure", "Large Language Models"],
+      skills: ["C#", "Unity", "Next.js", "TypeScript", "Tailwind CSS", "Azure"],
       icon: <Code className="w-6 h-6" />
     },
     {
@@ -56,23 +82,26 @@ export default function Timeline() {
       description: "Final year of university, focusing on Digital Media and Games, Software Engineering, and Artificial Intelligence, culminating in a dissertation project on cybersecurity awareness through gaming.",
       highlights: [
         "Deepened understanding of coding standards, game development, deep learning, software metrics and more",
-        "Completed an 82 page dissertation project on cybersecurity, developing an educational game (Grade: A)",
-        "Graduated with First Class Honours in Computer Science(Digital Media and Games)"
+        "Completed an 82 page dissertation project on cybersecurity, developing an educational game in Unity (Grade: A)",
+        "User studies showed a 34% average increase in cybersecurity knowledge and a 76% improvement in threat recognition after playing",
+        "Graduated with First Class Honours in Computer Science (Digital Media and Games)"
       ],
-      skills: ["C#", "Unity", ".Net", "R/RStudio", "Blockchain", "Deep Learning", "Game Design", "Large Language Models", "Software Engineering"],
+      skills: ["C#", "Unity", ".NET", "R/RStudio", "Blockchain", "Deep Learning", "Game Design", "Large Language Models", "Software Engineering"],
       icon: <GraduationCap className="w-6 h-6" />
     },
     {
       period: "2022-2023",
-      title: "FedEx Express Internship",
-      description: "Industrial year with FedEx Express in the Process Intelligence team, focusing on business process optimization and dashboard development.",
+      title: "Back Office IT Intern, FedEx Express",
+      description: "Placement year in FedEx Express's Process Intelligence team, which tracked and visualised business processes so other FedEx teams could find bottlenecks and improvement opportunities.",
       highlights: [
-        "Gained experience with Process Mining, Task Mining and Data Analysis",
-        "Developed the Process Intelligence team website using SharePoint",
-        "Built machine learning algorithms for text categorization and sentiment analysis",
-        "Earned SAFe 5 certification"
+        "Built and maintained 15+ dashboards in Celonis EMS and Power BI for real-time process reporting",
+        "Deployed a TF-IDF email classifier (scikit-learn) into a live triage pipeline, sorting inquiries into 11 types and cutting response times by around 20%",
+        "Led a Generative AI initiative, building LLM proofs of concept and presenting them to senior managers, who approved the work",
+        "Owned the team's SharePoint site, managing access and keeping technical documentation accurate",
+        "Automated SharePoint processes with Power Automate and provided IT support to internal users",
+        "Earned SAFe 5 Practitioner certification"
       ],
-      skills: ["Celonis EMS", "Power BI", "SharePoint", "Python", "SQL", "Machine Learning", "Agile Scrum", "Data Analysis"],
+      skills: ["Celonis EMS", "Power BI", "Python", "scikit-learn", "SQL", "SharePoint", "Power Automate", "LLMs", "Lean Agile"],
       icon: <Building2 className="w-6 h-6" />
     },
     {
@@ -80,35 +109,36 @@ export default function Timeline() {
       title: "Early University Years",
       description: "First years at Brunel University London, starting with foundation year and progressing through core computer science subjects.",
       highlights: [
-        "Adopted various technologies across different aspects of computer science",
+        "Won the Emerge-IQ L2 Project Prize for Software Innovation (March 2022) for a student budgeting web app built by a team of ten",
+        "Led a sprint on the budgeting app, merging the team's separate stylesheets to fix integration problems between sub-groups",
         "Led multiple group projects and coordinated team meetings",
-        "Won the Emerge-IQ Project Prize for Software Innovation at Made In Brunel 2022"
+        "eSports Team Leader and Student Fellowship Treasurer"
       ],
-      skills: ["Java", "HTML/CSS/JS", "Github", "AI/Machine Learning", "Databases", "Agile Scrum", "Networks", "Software Development"],
+      skills: ["Java", "Spring Boot", "MySQL", "HTML/CSS/JS", "GitHub", "AI/Machine Learning", "Agile Scrum", "Networks"],
       icon: <Laptop className="w-6 h-6" />
     },
     {
       period: "2017-2019",
       title: "A Levels",
-      description: "A Level studies focusing on Computer Science, developing first major programming project.",
+      description: "A Levels in Mathematics, Computer Science and Product Design at Havering Sixth Form College.",
       highlights: [
-        "Worked on first long-form software development project",
+        "Built an A Level Maths revision app, my first self-directed project, because the new curriculum lacked revision material",
         "Joined coding club at school",
         "Improved time management skills"
       ],
-      skills: ["Networks", "Object Oriented Programming", "Python", "Project Planning", "Waterfall Development"],
+      skills: ["Python", "Object Oriented Programming", "Networks", "Project Planning", "Waterfall Development"],
       icon: <BookOpen className="w-6 h-6" />
     },
     {
       period: "2016-2017",
       title: "Introduction to Programming",
-      description: "GCSE period where first exposure to programming and computing concepts occurred.",
+      description: "GCSE period at Drapers Academy, where I was first introduced to programming and computing concepts.",
       highlights: [
-        "Introduction to computing and programming",
+        "Achieved 9 GCSEs, including Computing",
         "Started learning programming basics through Python",
         "Developed various small scale programs"
       ],
-      skills: ["Python", "SQL", "Software Development", "Programming Concepts", "Waterfall Methodology", "Microsoft Excel"],
+      skills: ["Python", "SQL", "Software Development", "Programming Concepts", "Microsoft Excel"],
       icon: <Terminal className="w-6 h-6" />
     }
   ];
@@ -140,7 +170,7 @@ export default function Timeline() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
+                transition={{ delay: Math.min(index * 0.2, 0.4) }}
                 className={`relative flex flex-col md:flex-row gap-8 mb-16 ${
                   index % 2 === 0 ? 'md:flex-row-reverse' : ''
                 }`}
@@ -155,8 +185,8 @@ export default function Timeline() {
                   index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
                 }`}>
                   <div className="bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-blue-100 dark:border-blue-900">
-                    <div className="flex items-center gap-2 mb-4">
-                      <span className="text-sm font-semibold px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full">
+                    <div className="flex flex-wrap items-center gap-2 mb-4">
+                      <span className="text-sm font-semibold px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full whitespace-nowrap">
                         {item.period}
                       </span>
                       <h3 className="text-xl font-semibold text-foreground">
@@ -169,7 +199,7 @@ export default function Timeline() {
                     <ul className="space-y-2 mb-4">
                       {item.highlights.map((highlight, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-blue-400 dark:bg-blue-500" />
+                          <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-blue-400 dark:bg-blue-500 shrink-0" />
                           {highlight}
                         </li>
                       ))}
