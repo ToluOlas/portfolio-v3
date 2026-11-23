@@ -1,10 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import { Navbar } from '@/components/navbar';
 import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
+const display = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
 
 export const metadata: Metadata = {
   title: 'Tolu Olasupo - Software Engineer',
@@ -30,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning className={`scroll-smooth ${display.variable}`}>
       <body className={inter.className}>
         <Providers>
           <Navbar />
