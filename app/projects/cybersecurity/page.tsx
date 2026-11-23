@@ -225,7 +225,9 @@ export default function CybersecurityProject() {
         </div>
 
         <Prose className="mt-6">
-          <p className="font-display text-xl font-medium text-foreground">...meet Steve.</p>
+          <p className="font-display text-xl font-medium text-foreground">
+            ...meet <span className="text-metallic-orange font-bold">Steve</span>.
+          </p>
           <p>
             Steve is a new hire at Corpo, a company that on the surface, looks like any other office job. But underneath, it&apos;s a workplace quietly tearing itself apart. Employees sabotage each other to get ahead, management turns a blind eye to everything, and every single workday brings a fresh wave of cyber threats that Steve has to navigate just to keep his job. Players step into his shoes and experience a week at Corpo, with each day introducing new challenges, new mechanics inspired by real cyber threats, and a story that gets progressively harder to ignore as it directly impacts gameplay.
           </p>
